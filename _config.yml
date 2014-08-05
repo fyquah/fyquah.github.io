@@ -1,7 +1,7 @@
 inc:
   # Blog Information
   title:        "Fu Yong Quah - fyquah95"
-  subtitle:     "Engineer | Student"
+  subtitle:     "Engineering Brilliance"
   cover_image:  blog-cover.jpg
   # logo:         logo.png
   
@@ -12,7 +12,7 @@ inc:
   twitter:      fyquah95
   github:       fyquah95
   about_link:   /about-me/
-  # gplus:        '101183822199340201470'
+  gplus:        '113294597473293516809'
   
   # Product Information
   engineering_link: /engineering/
@@ -26,9 +26,9 @@ inc:
   
   # Sharing settings
   sharing:
-    twitter:    false
-    facebook:   false
-    gplus:      false
+    twitter:    true
+    facebook:   true
+    gplus:      true
     hn:         false
     
   
