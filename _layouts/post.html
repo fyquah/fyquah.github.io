@@ -2,7 +2,7 @@
 layout: base
 ---
 {% unless page.cover_image %}
-<div class="blog-cover" style="background-image:url(/images/{{ site.inc.cover_image }});">
+{% include _blog_cover.html %}
 </div>
 {% else %}
 <div class="blog-cover" style="background-image:url(/images/{{ page.cover_image }});">

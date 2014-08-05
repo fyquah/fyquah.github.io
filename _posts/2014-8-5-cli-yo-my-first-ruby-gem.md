@@ -9,7 +9,7 @@ excerpt: "My first attempt to build a Ruby Gem, with a fun purpose behind!"
 
 Guess developers are familiar with this saying (not in exact words, but you get my point)!
 
-> “Build apps the you, or others, need”
+> “Build apps that you, or others, need”
 
 I like to idea of yo! to annoy people, but the problem is pushing the yo! button every now and then is pretty annoying. So I thought, yo! has an API, why not build a gem with it?
 
