@@ -6,8 +6,8 @@ require "jekyll"
 
 
 # Change your GitHub reponame eg. "kippt/jekyll-incorporated"
-GITHUB_REPONAME = ""
-
+GITHUB_REPONAME = "fyquah95.github.io"
+GITHUB_USERNAME = "fyquah95"
 
 namespace :site do
   desc "Generate blog files"
@@ -28,8 +28,8 @@ namespace :site do
       system "git add ."
       message = "Site updated at #{Time.now.utc}"
       system "git commit -m #{message.inspect}"
-      system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-      system "git push origin master:refs/heads/gh-pages --force"
+      system "git remote add origin https://github.com/#{GITHUB_USERNAME}/#{GITHUB_REPONAME}"
+      system "git push origin master --force"
     end
   end
 end

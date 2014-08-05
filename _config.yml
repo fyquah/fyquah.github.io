@@ -55,7 +55,7 @@ timezone:    nil
 future:      false
 show_drafts: nil
 limit_posts: 0
-highlighter:    true
+pygment:    true
 
 relative_permalinks: true
 
@@ -63,7 +63,7 @@ permalink:     /:title
 paginate_path: 'page:num'
 paginate: 10
 
-markdown:      kramdown
+markdown:      maruku
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
 
