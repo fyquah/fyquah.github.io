@@ -1,26 +1,7 @@
 ---
 layout: base
 ---
-<div class="blog-cover" style="background-image:url(/images/{{ site.inc.cover_image }});">
-    
-    <section>
-        <div class="container">
-            <h1>{{ site.inc.title }}</h1>
-            {% if site.inc.subtitle %}<h3>{{ site.inc.subtitle }}</h3>{% endif %}
-        
-            {% if site.inc.twitter %}
-            <a href="https://twitter.com/{{ site.inc.twitter }}" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter"></i></a>
-            {% endif %}
-            {% if site.inc.facebook %}
-            <a href="http://facebook.com/{{ site.inc.facebook }}" title="Like on Facebook" target="_blank"><i class="icon icon-facebook"></i></a>
-            {% endif %}
-            <a href="/feed.xml" title="RSS Feed">
-                <i class="icon icon-rss"></i>
-            </a>
-        </div>
-    </section>
-</div>
-
+{% include _blog_cover.html %}
 
 <article class="container">
 {% for post in paginator.posts %}
@@ -31,7 +12,7 @@ layout: base
             <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
             <p>{{ post.excerpt }}</p>
             <div class="meta">
-                Written By <address>{{ post.author.name }}</address> &mdash;
+                <address>Fu Yong Quah</address> &mdash;
                 <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
             </div>
         </div>
