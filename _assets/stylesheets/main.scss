@@ -20,3 +20,12 @@ $accent: #2077b2;
 @import "icons";
 @import "syntax";
 @import "responsive";
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+.highlight > pre > code
+{
+    font-size: 13px;
+    font-family: "Droid Sans Mono",;
+}

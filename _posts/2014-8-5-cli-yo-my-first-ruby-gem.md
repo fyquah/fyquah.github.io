@@ -27,15 +27,15 @@ I have included several features, which makes it more than a wrapper for REST AP
 
 To yo! , it is as simple as a command.
 
-{% highlight bash %}
+~~~ bash
 $ cli-yo annoying-buddy another-annoying-buddy --interval 5 --times 10 --silent
 # It is called cli-yo to prevent confusion with the npm package yo
 # This will yo the two guys ten times, every 5 minutes (that is 50 minutes of awesomeness!) as a background job
-{% endhighlight %}
+~~~
 
 Other than the command line, you can also yo! from your code (as long as it is ruby!)
 
-{% highlight ruby %}
+~~~ ruby
 require "cli_yo"
 args = {
   usernames: ["annoying-buddy" , "another-anoying-buddy"],
@@ -44,7 +44,8 @@ args = {
   silent: true
 }
 Cli_Yo.yo! args #This will annoy them 10 times from the background!Zz
-{% endhighlight %}
+~~~
+
 
 It is open source, feel free to check out the <a href='https://github.com/fyquah95/cli-yo/' target="_blank">source code</a> in github!
 

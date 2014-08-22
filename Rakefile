@@ -9,6 +9,20 @@ require "jekyll"
 GITHUB_REPONAME = "fyquah95.github.io"
 GITHUB_USERNAME = "fyquah95"
 
+namespace :code do
+  desc "Update your source code"
+  task :update do 
+    system "git add -A"
+    STDOUT.puts "Please enter a commit message , enter <current-time> to get current time"
+    commit_msg = STDIN.gets.chomp
+    commit_msg.gsub! /<current-time>/ , Time.now.to_s
+    STDOUT.puts "Your commit message is"
+    STDOUT.puts commit_msg
+    system "git commit -m \"#{commit_msg}\""
+    system "git push origin source:source"
+  end
+end
+
 namespace :post do
   desc "Generate new post layout"
   task :new , [:name] do |t ,arg|
@@ -17,10 +31,10 @@ namespace :post do
         self.split(/ |\_/).map(&:capitalize).join(" ")
       end
     end
-    title = arg["name"]
-    file_name = "#{Time.now.strftime('%Y-%m-%d')}-#{arg["name"]}.md"
+    title = arg["name"] || "new-post"
+    file_name = "#{Time.now.strftime('%Y-%m-%d')}-#{title}.md"
     puts "post name to be generated in ./_posts is #{file_name}"
-    base_format = File.open("./_drafts/draft.md" , "r"){ |f| f.read }
+    base_format = File.open("./_drafts/format.md" , "r"){ |f| f.read }
     base_format.sub!("<title-goes-here>" , title.gsub(/[-_]/ , " ").titleize)
     f = File.new("./_posts/#{file_name}" , "w")
     f.write(base_format)
@@ -47,7 +61,7 @@ namespace :site do
       message = "Site updated at #{Time.now.utc}"
       system "git commit -m #{message.inspect}"
       system "git remote add origin https://github.com/#{GITHUB_USERNAME}/#{GITHUB_REPONAME}"
-      system "git push origin master"
+      system "git push origin master --force"
     end
   end
 end
