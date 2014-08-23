@@ -68,6 +68,7 @@ namespace :site do
       system "git init"
       system "git add ."
       message = "Site updated at #{Time.now.utc}"
+      system "git remote add origin https://github.com/#{GITHUB_USERNAME}/#{GITHUB_REPONAME}"
       system "git commit -m #{message.inspect}"
       system "git push origin master --force"
     end
