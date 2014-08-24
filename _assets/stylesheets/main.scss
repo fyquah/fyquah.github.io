@@ -30,3 +30,21 @@ $accent: #2077b2;
     font-size: 13px;
     font-family: "Droid Sans Mono",;
 }
+
+.post-comment
+{
+    font-size : 11px;
+    text-align: right;
+    color: #969696;
+}
+
+.separator
+{
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    border-bottom: solid black 8px;
+    opacity: 0.2;
+    margin-bottom: 20px;
+
+}
