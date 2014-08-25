@@ -34,6 +34,10 @@ layout: base
           <div ng-app="commentApp" ng-controller='commentCtrl' class='row'>
             <div class='col-xs-12 col-sm-offset-2 col-sm-8'>
                 <h2>Write a Comment</h2>
+                <div ng-show="newComment.errors" style="background-color : #ffa5a5 ; padding-top : 5px ; padding-bottom : 5px"><ul>
+                  <li ng-repeat="err in newComment.errors" style="color : #600000">{[{err}]}</li>
+                </ul></div>
+                <br />
                 <form ng-submit="submitComment()">
                     <div class='form-group'>
                         <input placeholder="Your name / nickname" type="text" ng-model="newComment.username" class='form-control'/>

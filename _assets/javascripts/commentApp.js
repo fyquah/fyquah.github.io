@@ -10,34 +10,54 @@
     }
   }]);
 
+  app.factory("validateComment" , function(){
+  	return function(obj){
+  		var errs = [];
+  		["username" , "comment"].forEach(function(key){
+  			if(typeof obj[key] == "undefined"){
+  				errs.push(key + " cannot be empty!");
+  			}
+  		});
+  		if(typeof obj["username"] == "string" && obj["username"].length > 50){
+  			errs.push("username must be less than or equal to 50 characters in length!");
+  		}
+  		return errs;
+  	};
+  });
+
   app.config(["$interpolateProvider" , function($interpolateProvider){
     $interpolateProvider.startSymbol('{[{').endSymbol('}]}');
   }]);
 
-  app.controller("commentCtrl" , ["$scope" , "Comments" , function($scope , Comments){
+  app.controller("commentCtrl" , ["$scope" , "Comments" , "validateComment" , function($scope , Comments , validateComment){
+    (function(){
+      $scope.newComment = Object.create(null);
+    })();
+
     var nodeName = window.location.pathname.split("/").filter(function(x){
       return x != false
     }).join();
 
     $scope.comments = Comments(nodeName);
-    console.log($scope.comments);
 
     $scope.submitComment = function(){
-      var username = $scope.newComment.username;
-      var comment = $scope.newComment.comment;
-      var website = $scope.newComment.website.length == 0 ? null : $scope.newComment.website;
-
-      if(username.length == 0 || comment.length == 0){
-        alert("Please enter a comment and/or username");
-        return;
+      if(typeof $scope.newComment == "undefined" || $scope.newComment == null){
+        $scope.newComment = Object.create(null);
       }
 
-      $scope.comments.$add({
-        comment: comment,
-        username: username,
-        website: website,
+      var obj = {      
+      	comment: $scope.newComment.comment,
+        username: $scope.newComment.username,
+        website: $scope.newComment.website,
         created_at: (new Date()).getTime()
-      })
+      };
+      var errors = validateComment(obj);
+      
+      if(errors.length == 0){
+      	$scope.comments.$add(obj);	
+      } else {
+      	$scope.newComment.errors = errors;
+      }
     }
   }]);
 
