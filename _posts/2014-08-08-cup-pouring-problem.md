@@ -70,4 +70,4 @@ If you are not convivned it will work, try drawing diagrams. My friends and I (f
 
 The project is <a href='https://github.com/yihangho/cups' target='_blank'>open source</a> in github, started by a friend of mine. I contributed smoe of the languages' algorithms (basically they are the same BFS, implemented differently)
 
-As said, the simulation is <a href='/cup-pouring-problem/simulation/'>here</a>
+As said, the simulation is <a href='/projects/cups/simulate/'>here</a>
