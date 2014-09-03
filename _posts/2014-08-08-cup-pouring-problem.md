@@ -12,6 +12,7 @@ Given two cups , with known volumes and an infinite supply of water. Is it possi
 It sounds simple and difficult at the same time. Simple as you can simply evaluate a possibilities, difficult as you might reevaluate a condition again with <strong>brute force</strong> (trying all conditions) techniques.
 
 To clarify, there are six operations available (there are two ways to do the operations below)
+
 * Empty a cup
 * Fill a cup
 * Pour water from a cup to another
@@ -19,6 +20,7 @@ To clarify, there are six operations available (there are two ways to do the ope
 <strong>An example</strong> - we have two cups with volumes <em>9 units</em> and <em>4 units</em> respectively and we are trying to obtain a volume of <em>2 units</em>. 
 
 In case you are not clear , you can try some operations:
+
 * If you fill up the first cup, you will have (9 , 0)
 * Then fill up the second cup, you will have (9 , 4)
 * Then empty the second cup, you now have (9 , 0)
@@ -27,6 +29,7 @@ In case you are not clear , you can try some operations:
 Read the above paragraph until you understand what is going on.
 
 Now, let's try solving this problem by hand.
+
 * <strong>(0 , 0)</strong> - We start with two empty cups
 * <strong>(9 , 0)</strong> - We fill up the first cup with water
 * <strong>(5 , 4)</strong> - We pour water from the first cup into the second cup
@@ -42,12 +45,14 @@ Now, let's try solving this problem by hand.
 Eureka! (Literally, as this was what <a href="http://en.wikipedia.org/wiki/Archimedes'_principle" target="_blank">archimedes discovered</a> when he was dealng with waters too). We managed to get 2 units of water in <strong>10 steps</strong>. For small volumes like this, it is always easy to calculate the solution. But what if I were to give you really odd values like 101ml and 79ml to form 2ml? You probably can't and won't do it by hand. <em>(In case you are curious, it is feasible, 162 steps)</em>
 
 Here are the problems with attempting this problem by hand:
+
 * <strong>Too many possibilities</strong> - by doing one of the operations, and doing another one subsequently , some simple multiplication shows that there are a lot of possiblities
-* <strong>Hard (if not unable) to trace revisited conditions</strong> - by using a computer, you can easily trace a condition with O(log N) (O(1) if you are using arrays ) using the heap data structure. By hand? good luck.
+* <strong>Hard (if not unable) to identify revisited conditions</strong> - by using a computer, you can easily trace a condition with O(log N) (O(1) if you are using arrays ) using the heap data structure. By hand? good luck.
 * <strong>Mindfuck</strong> - You would probably go mad before getting a solution. In the example above, we were lucky to get the correct answer on the first try. (My brother who doesn't do computer science used something like 10 minutes, my computer took less than 0.01 seconds)
 
 Exactly why a computer can solve the problem is inverse to those above
-* Too many possibilities don't exist in computer science (unless you are speacking something like a googol)
+
+* Too many possibilities don't exist in computer science (unless you are speaking something like a googol)
 * Data structures to easily and quickly check visited conditions
 * Computer don't have emotions (hence, won't get mind-fuck)
 
@@ -68,6 +73,6 @@ If you are not, try thinking this way:
 
 If you are not convivned it will work, try drawing diagrams. My friends and I (for the sake of fun) have assembled a project to solve this problems in several programming languages, including a simulation in the web browswer.
 
-The project is <a href='https://github.com/yihangho/cups' target='_blank'>open source</a> in github, started by a friend of mine. I contributed smoe of the languages' algorithms (basically they are the same BFS, implemented differently)
+The project is <a href='https://github.com/yihangho/cups' target='_blank'>open source</a> in github, started by a friend of mine. I contributed some of the implementations and writen the simulation for a web browser (in case you are curious, in <a href="http://jquery.com">jquery</a>)
 
 As said, the simulation is <a href='/projects/cups/simulate/'>here</a>
