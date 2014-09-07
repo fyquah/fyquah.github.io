@@ -19,7 +19,7 @@ That is, imo,  another way of saying no.
 
 At one point (before I seriously started to write code), I was pondering upon this question myself (when applying to universities). Google is cool, but not cool enough. I have always been an example-fan-boy, so let's use those before going to the actual definitions.
 
-I was put questions, and provide (probable) answers from both software engineer answer and computer scientist answer.
+I will put questions, and provide (probable) answers from both software engineer answer and computer scientist answer.
 
 # Some notes before reading
 
