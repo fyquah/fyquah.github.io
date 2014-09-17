@@ -167,7 +167,7 @@ It is not important to understand how database works, but software engineers are
 Let's answer this question using ruby. (don't worry too much about understanding this code)
 
 ~~~ruby
-contents =  File.open('main.py' , 'r'){ |f| f.read 
+contents =  File.open('main.py' , 'r'){ |f| f.read }
 selected_lines = []
 contents.each_line do |line| { (selected_lines << line) if line =~ "name = snowman" }
 puts selected_lines
