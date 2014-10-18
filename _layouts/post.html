@@ -34,7 +34,7 @@ layout: base
           <div ng-app="commentApp" ng-controller='commentCtrl' class='row'>
             <div class='col-xs-12 col-sm-offset-2 col-sm-8'>
                 <h2>Write a Comment</h2>
-                <div ng-show="newComment.errors" style="background-color : #ffa5a5 ; padding-top : 5px ; padding-bottom : 5px"><ul>
+                <div ng-show="newComment.errors && newComment.errors.length !== 0" style="background-color : #ffa5a5 ; padding-top : 5px ; padding-bottom : 5px"><ul>
                   <li ng-repeat="err in newComment.errors" style="color : #600000">{[{err}]}</li>
                 </ul></div>
                 <br />

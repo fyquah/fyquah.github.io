@@ -45,19 +45,19 @@
         $scope.newComment = Object.create(null);
       }
 
-      var obj = {      
-      	comment: $scope.newComment.comment,
-        username: $scope.newComment.username,
-        website: $scope.newComment.website,
-        created_at: (new Date()).getTime()
-      };
+      var obj = {};
+      ["comment" , "username", "website"].forEach(function(prop){
+        if (typeof $scope.newComment[prop] === "string" && $scope.newComment[prop].length !== 0) {
+          obj[prop] = $scope.newComment[prop];
+        }
+      });
+      obj.created_at = (new Date()).getTime();
       var errors = validateComment(obj);
       
       if(errors.length == 0){
       	$scope.comments.$add(obj);	
-      } else {
-      	$scope.newComment.errors = errors;
       }
+      $scope.newComment.errors = errors;
     }
   }]);
 
