@@ -270,7 +270,7 @@ It is really annoying to have configuration variables in two places. I am curren
 cd /path/to/deployment
 bundle
 bundle exec rake db:migrate
-bundle exec rale assets:precompile
+bundle exec rake assets:precompile
 ~~~
 
 ## 13. Start and restart the server!
