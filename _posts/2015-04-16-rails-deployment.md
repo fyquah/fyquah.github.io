@@ -216,6 +216,7 @@ sudo su postgres -c "createuser dbuser -P"
 # Then, you will be prompted for your password.
 sudo su postgres -c "createdb -O dbuser app_name_production"
 sudo su postgres -c "psql app_name_production -c 'ALTER SCHEMA public OWNER TO dbuser'"
+sudo su postgres -c "psql -c 'ALTER USER dbuser CREATEDB'"
 sudo su postgres -c "echo 'local all all md5' >> /etc/postgresql/9.3/main/pg_hba.conf"
 
 # Restart postgres server
