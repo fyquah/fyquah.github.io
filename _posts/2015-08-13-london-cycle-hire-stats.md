@@ -123,19 +123,19 @@ timeseries graph below).
 <div class="full zoomable"><img src="/images/london-cycle-hire/large-peak-tube-strike.png" /></div>
 <p style="text-align : center">A large peak due to tube strike</p>
 
-Similiarly, the closure on 28 November 2010 is due to a less tube strike 
-severe (ref: <a href="http://www.bbc.co.uk/news/uk-england-london-11860210">
-BBC News</a>). As the tube strike was not as severe as the one in July 2015,
+Similiarly, the closure on 28 November 2010 is due to a less severe tube strike 
+(ref: <a href="http://www.bbc.co.uk/news/uk-england-london-11860210">
+BBC News</a>). As consequences of it was much more insignificant than that in July 2015,
 the peak is less sharp. It may also be coupled by the fact that people prefer
 taking longer tube routes than cycle when the winter approaches.
 
 ## Conclusion?
 
-From interpreting the data, with some biased subjective opinions: (In the order of significance)
+From interpreting the data, with some biased subjective opinions: 
 
-Londoners cycle primarily when:
+Londoners cycle primarily when: (In the order of significance)
 
-* **Tube strikes** ( causes sudden peaks in the proportion graph )
+* **Tube strikes** occur ( causes sudden peaks in the proportion graph )
 * They need to get to **work** ( more cycle hires on weekdays than weekends )
 
 Londoners adjust their cycling schedules based on the **weather**, prefering not to
