@@ -34,7 +34,7 @@ slight drop from 2012 to 2013.
 *Note: data from 2010 and 2015 ommitted as they are incomplete*
 
 Aside from that, the signal obtained from this data seems like random fluctuations / 
-noise that does not exhibit any particular pattern (aside from a very large peak 
+noise that does not exhibit any interesting local patterns (aside from a very large peak 
 in July 2015). Hence, let's try deriving some secondary data!
 
 # Secondary Data
@@ -43,14 +43,14 @@ I have calculated the proportion of hires in a day-of-week (eg: Monday, Tuesday)
 For example, if there are a total of 100 bicycle hires at the week starting 5 July 
 2010 and there are 20 hires on Monday, the value of Monday for the week 
 starting 5 July 2010 will be assigned a value of 0.20. In case you still do not
-understand what proportion in our contxt mean, please refer the [appendix](#appendix).
+understand what proportion in our context mean, please refer the [appendix](#appendix).
 
-Interestingly, this simple data transformation seems to present some additional
-information to us:
+Interestingly, this simple data transformation seems to present us some additional
+information:
 
 <div class="full zoomable"><img src="/images/london-cycle-hire/by-day.png"></div>
 
-Here are the average proportions over the proportions obtained from the last 5 years:
+Here are the _average proportions_ by _day of week_  over the last 5 years:
 
 * Sunday  **0.1115**
 * Monday  **0.14389**
@@ -63,25 +63,22 @@ Here are the average proportions over the proportions obtained from the last 5 y
 The average proportion of hires on weekends (0.116725) is 
 noticable lower than (0.1533), a difference of approximately 27%.
 
-The following is the varience and average deviation (note, not standard deviation)
-of the above entries:
+The following is the varience and average deviation (note, not standard deviation to
+prevent numerical problems) of the above entries:
 
-* Sunday , 0.0010001 , 0.02439 
-* Monday , 0.0006385 , 0.01820
-* Tuesday , 0.0005254 , 0.01585
-* Wednesday , 0.0005739 , 0.01546
-* Thursday , 0.0006224 , 0.01662
-* Friday , 0.0005045 , 0.01686
-* Saturday , 0.0008424 , 0.02288
+* Sunday , **0.0010001** , **0.02439** 
+* Monday , **0.0006385** , **0.01820**
+* Tuesday , **0.0005254** , **0.01585**
+* Wednesday , **0.0005739** , **0.01546**
+* Thursday , **0.0006224** , **0.01662**
+* Friday , **0.0005045** , **0.01686**
+* Saturday , **0.0008424** , **0.02288**
 
 The varience in proportion of hires on weekends (0.00092127) is
 much higher than those of weekdays (0.0005730) 46.61%.
 
-Of course (mind the slight bias here), averages are not entirely exciting. 
-Here's a graph to introduce some spice to these averages.
-
-The graph below shows 7 lines, each representing a day of the week. To give you a
-rough context on what the line chart means, 
+Over the course of 260 weeks, there are approximately 13 significant peaks / statistical
+outliers. I will leave finding them a challenge for the readers.
 
 ## Interpreting the Statistics 
 
@@ -91,7 +88,8 @@ above.
 Based on the timeseries graph above, Londoners prefer not to cycle when the 
 **weather** is cold, especially during winter. 
 
-The number of cyclists over the course of 4 years (2011 - 2014) is gradually increasing. The slight drop in 2013 might be due to air pollitions problems (ref: [airqualitynews](http://www.airqualitynews.com/2013/01/11/london-areas-already-exceeding-2013-legal-air-pollution-limits/) ). However, the small size of data refrains us from making any reliable conclusions.
+The number of cyclists over the course of 4 years (2011 - 2014) is gradually increasing. 
+The slight drop in 2013 might be due to air pollitions problems (ref: [airqualitynews](http://www.airqualitynews.com/2013/01/11/london-areas-already-exceeding-2013-legal-air-pollution-limits/) ). However, the small size of data refrains us from making any reliable conclusions.
 
 <div class="full zoomable"><img src="/images/london-cycle-hire/basic-time-series-concave.png"></div>
 
@@ -133,21 +131,23 @@ taking longer tube routes than cycle when the winter approaches.
 
 ## Conclusion?
 
-From interpreting the data:
+From interpreting the data, with some biased subjective opinions: (In the order of significance)
 
-The significant factors are:
+Londoners cycle primarily when:
 
-* Weather ( causes a upwards / downwards trend )
-* Tube strikes ( causes sudden peaks )
+* **Tube strikes** ( causes sudden peaks in the proportion graph )
+* They need to get to **work** ( more cycle hires on weekdays than weekends )
 
-Other factors:
+Londoners adjust their cycling schedules based on the **weather**, prefering not to
+cycle during winter. ( more cycle hires on summer than winter )
 
-* Scheduled closures ( causes a small peak )
-* Holidays ( Prefer not to cycle )
-* Non-recurring visits ( causes a rather unpredictable cycle-hiring schedule on weekends )
+Londoners prefer not to cycle during holidays. Occasionally (inpredictable how often), Londoners 
+prefer to hire cycle for **non-recurring visits**. ( the higher average deviation during weekends )
 
-It is quite fun how such simple data and data transformation methods can 
-give us insights on the city!
+Londoners will prefer to cycle during a **scheduled closures**, but the effect
+is much less significant than tube strikes. ( trends in christmas and new year )
+
+_At least this is what I think_
 
 <div id="appendix"></div>
 ## Appendix: Understanding the Week Proportion Transformation
