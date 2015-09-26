@@ -1,23 +1,14 @@
 ---
 layout: base
 ---
-{% unless page.cover_image %}
-{% include _blog_cover.html %}
-</div>
-{% else %}
-<div class="blog-cover" style="background-image:url(/images/{{ page.cover_image }});">
-</div>
-{% endunless %}
-<article>
-
+<article class='article'>
     <div class="container">
         <header>
+            <h1 class="title">{{ page.title }}</h1>
+            {% if page.subtitle %}<h4 class="subtitle">{{ page.subtitle }}</h4>{% endif %}
             <div class="meta">
-                By <address>Fu Yong Quah</address> &mdash;
                 <time pubdate datetime="{{ page.date | date: "%Y-%d-%B" }}" title="{{ page.date | date: "%B %d, %Y" }}">{{ page.date | date: "%B %d, %Y" }}</time>
             </div>
-            <h1 class="title">{{ page.title }}</h1>
-            {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
         </header>
 
         <section>

@@ -1,0 +1,107 @@
+* {
+    font-family: "Lucida Console", Monaco, monospace;
+    line-height: 150%;
+}
+
+div.border {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 2px;
+    background-color: #3498db;
+}
+
+header.header  {
+    border: 5px solid #3498db;
+    padding: 5px;
+}
+
+header.header table td {
+    padding: 2px; 
+}
+
+article.article div.container table.index thead th {
+    border-bottom : 2px solid #95a5a6;
+    padding-top: 10px;
+    padding-bottom : 10px;
+}
+
+article.article div.container table.index tr td.title {
+    padding: 3px;
+}
+
+article.article div.container table.index tr td.title p.excerpt {
+    padding-right: 10px;
+    padding-left: 3px;
+    font-size: 12px;
+}
+
+article.article div.container table.index tr td.time {
+    padding: 3px;
+}
+
+img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+div.meta {
+    text-align: right;
+    padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+    article.article div.container  {
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    article.article div.container  {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    article.article div.container  {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    article.article div.container  {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+article#about-me img.avatar {
+    border-radius: 100%;
+    float: left; 
+    max-width: 200px;
+    width: 30%;
+    margin: 20px;
+}
+
+.highlight > pre
+{
+    padding: 5px;
+    font-size: 13px;
+    font-family: "Droid Sans Mono",;
+    background-color: #e2e2e2;
+}
+
+.highlight > pre > code {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+

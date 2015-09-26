@@ -58,7 +58,7 @@ relative_permalinks: true
 
 permalink:     /:title
 paginate_path: 'page:num'
-paginate: 10
+paginate: 20  
 
 
 textile_ext:   textile

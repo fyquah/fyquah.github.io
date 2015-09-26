@@ -1,35 +1,51 @@
 ---
 layout: base
 ---
-{% include _blog_cover.html %}
 
-<article class="container">
-{% for post in paginator.posts %}
-  {% unless post.draft %}
-    <section class="index">
-        <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
+<article class="article">
+    <div class="container">
         <div>
-            <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
-            <p>{{ post.excerpt }}</p>
-            <div class="meta">
-                <address>Fu Yong Quah</address> &mdash;
-                <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
-            </div>
+            <h2>
+                Fu Yong's Corner of the Internet
+            </h2>
+            <p><em>A simple blog, with (almost) nothing but contents</em></p>
+
         </div>
-        <hr>
-    </section>
-    {% endunless %}
-    {% endfor %}
-    <section class="pagination" style="text-align:center">
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <a href="/" class="btn btn-outline">‹ Newer</a>
-        {% else %}
-        <a href="/page{{ paginator.previous_page }}" class="btn btn-outline">‹ Newer</a>
-        {% endif %}
-      {% endif %}
-      {% if paginator.next_page %}
-        <a href="/page{{ paginator.next_page }}" class="btn btn-outline">Older ›</a>
-      {% endif %}
-    </section>
+
+        <table class="index">
+            <thead>
+                <th>Title</th>
+                <th>Date</th>
+            </thead>
+            {% for post in paginator.posts %}
+              {% unless post.draft %}
+                    <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
+                    <tr>
+                        <td class='title'>
+                            <a href="{{ post.url }}" rel="prefetch">
+                                {{ post.title }}
+                            </a>
+                            <p class="excerpt"><em>{{ post.excerpt }}</em></p>
+                        </td>
+                        <td class="time">
+
+                            <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                        </td>
+                    </tr>
+              {% endunless %}
+            {% endfor %}
+        </table>
+        <section class="pagination" style="text-align:center">
+          {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+            <a href="/" class="btn btn-outline">‹ Newer</a>
+            {% else %}
+            <a href="/page{{ paginator.previous_page }}" class="btn btn-outline">‹ Newer</a>
+            {% endif %}
+          {% endif %}
+          {% if paginator.next_page %}
+            <a href="/page{{ paginator.next_page }}" class="btn btn-outline">Older ›</a>
+          {% endif %}
+        </section>
+    </div>
 </article>
