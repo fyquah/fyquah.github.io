@@ -41,3 +41,6 @@ Lisbon night life)
 during my internship who convinced me to use this wonderful text editor.
 - I am on a typing-accuracy fixing adventure! While I can go on roughly 102 WPM consistently, my error
 rate is roughly 4% (That is terrible ...). I will write more about this when I have some results. I have collected some data before I try some methods to fix my typing, so stay tuned.
+- I am becoming a [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) nerd. My latest project was to implement Convolutional Neural Networks on Maxeler's FPGA HLS platform.
+
+All in all, I intend to keep this space updated in the near and distant future.
