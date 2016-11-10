@@ -24,7 +24,7 @@ A lot have happened  in my life during the months (or year?)that I have not blog
 - I wrote a self-hosting C compiler. I feel great satisfaction as I wrote a big C project and wrote a compiler
 - I indulged myself in studying machine learning topics, specifically reinforcement learning and statistical bayeisian inference. I intend to write about those topics on a regular basis (~ once every three weeks?) as some form of "revision / self-review"
 - I have recently been to web summit 2016. Got some pretty cool idea refreshers (and enjoyed some Lisbon night life)
-- I am an avid vim user now! (This is probably since ~ August 2015). Thanks to my friends at Netcraft during my internship who convinced me to use this wonderful text editor.
+- I am an avid vim user now! (This is probably since ~ August 2015). Thanks to my friends at Netcraft during my first internship who convinced me to use this wonderful text editor.
 - I am on a typing-accuracy fixing adventure! While I can go on roughly 102 WPM consistently, my error rate is roughly 4% (That is terrible ...). I will write more about this when I have some results. I have collected some data before I try some methods to fix my typing, so stay tuned.
 - I am becoming a [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) nerd. My latest project was to implement Convolutional Neural Networks on Maxeler's FPGA HLS platform.
 
