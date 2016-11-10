@@ -17,9 +17,8 @@ layout: base
                 <th>Title</th>
                 <th>Date</th>
             </thead>
-            {% for post in paginator.posts %}
+            {% for post in site.posts %}
               {% unless post.draft %}
-                    <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
                     <tr>
                         <td class='title'>
                             <a href="{{ post.url }}" rel="prefetch">

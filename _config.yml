@@ -1,95 +1,37 @@
-inc:
-  # Blog Information
-  title:        "Fu Yong Quah - fyquah95"
-  subtitle:     "Engineering Brilliance"
-  cover_image:  blog-cover.jpg
-  # logo:         logo.png
-  
-  # Company information
-  company:      Incorporated
-  url:          http://sendtoinc.com/
-  facebook:     fyquah95
-  twitter:      fyquah95
-  github:       fyquah95
-  about_link:   /about-me/
-  gplus:        '113294597473293516809'
-  
-  # Product Information
-  engineering_link: /engineering/
-  non_engineering_link: /non-engineering/
-  tagline:      "Engineering brilliance"
-  
-  # Comments
-  disqus:
-    # Eg. "exampleblog" Set to false to disable comments
-    shortname:  false
-  
-  # Sharing settings
-  sharing:
-    twitter:    true
-    facebook:   true
-    gplus:      true
-    hn:         false
-
- # Analytics     
-  analytics:
-    google: false # Add tracking code in _includes/_google-analytics.html
-
-  # Google Fonts
-  # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
-  google_font: 'Droid+Sans:400,700'
-
-  # Setup your fonts, colors etc at _assets/stylesheets/main.scss
-
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
-include:     ['.htaccess']
-exclude:     []
-timezone:    nil
-
-# Show future posts
-future:      false
-show_drafts: nil
-limit_posts: 0
-
-relative_permalinks: true
-
-permalink:     /:title
-paginate_path: 'page:num'
-paginate: 20  
-
-
-textile_ext:   textile
-
-excerpt_separator: "<!-- more -->"
-
-safe:        false
-host:        0.0.0.0
-port:        4000
-baseurl:     /
-lsi:         false
-markdown_ext: "md"
+# Welcome to Jekyll!
 #
-# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
 #
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-markdown: redcarpet
-highlighter: pygments
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "Fu Yong Quah"
+subtitle: "fyquah95"
+email: fuyong@fyquah.me
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://www.fyquah.me/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
 
-exclude: ["_drafts"]
-assets:
+about_link: "/about-me"
+facebook: "fyquah95"
+twitter: "fyquah95"
+linkedin: "fyquah95"
+github: "fyquah95"
 
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/images
-  js_compressor: uglifier
-  css_compressor: sass
-  cachebust: none
-  cache: false
-  gzip: [ text/css, application/javascript ]
-  debug: false
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title

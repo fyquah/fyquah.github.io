@@ -3,23 +3,24 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} &mdash; {{ site.inc.title }}{% else %}{{ site.inc.title }} &mdash; {{ site.inc.subtitle }}{% endif %}</title>
-    {% stylesheet style %}
-    {% stylesheet _syntax %}
-    <meta property="og:site_name" content="{{ site.inc.title }}">     
+    <title>{% if page.title %}{{ page.title }} &mdash; {{ site.title }}{% else %}{{ site.title }} &mdash; {{ site.subtitle }}{% endif %}</title>
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/syntax.css">
+    <meta property="og:site_name" content="{{ site.inc.title }}">
 </head>
 <body>
-    
+
 <header class="header">
     <nav id="navigation">
         <table>
             <tr>
                 <td><a href="/" class="home">Home</a></td>
                 <td>&middot;</td>
-                {% if site.inc.about_link %}
+                {% if site.about_link %}
                     <td>
-                        <a href="{{ site.inc.about_link }}">About Me</a>
-                    </td>{% endif %}
+                        <a href="{{ site.about_link }}">About Me</a>
+                    </td>
+                {% endif %}
 
             </tr>
         </table>
@@ -32,27 +33,31 @@
 <footer class="site-footer">
     <div class="border"></div>
     <div class="container">
-        &copy; {{ site.time | date: "%Y" }} 
-        
-        <nav>
-            <a href='/'>Home</a> &middot;
-            {% if site.inc.product_link %}<a href="{{ site.inc.product_link }}">Engineering</a> &middot; {% endif %}
-            {% if site.inc.about_link %}<a href="{{ site.inc.about_link }}">About Me</a>{% endif %}
-        </nav>
-        
+        &copy; {{ site.time | date: "%Y" }}
+
         <nav class="social">
-            {% if site.inc.twitter %}
-            <a href="https://twitter.com/{{ site.inc.twitter }}" title="Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            <a href='/'>Home</a>
+            {% if site.about_link %}
+                &middot;
+                <a href="{{ site.about_link }}">About Me</a>
             {% endif %}
-            {% if site.inc.facebook %}
-            <a href="https://facebook.com/{{ site.inc.facebook }}" title="Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            {% if site.twitter %}
+                &middot;
+                <a href="https://twitter.com/{{ site.twitter }}" title="Twitter" target="_blank">
+                    Twitter<i class="icon icon-twitter black"></i></a>
+            {% endif %}
+            {% if site.facebook %}
+                &middot;
+                <a href="https://facebook.com/{{ site.facebook }}" title="Facebook" target="_blank">
+                    Facebook<i class="icon icon-facebook black"></i></a>
             {% endif %}    
-            {% if site.inc.github %}
-            <a href="https://github.com/{{ site.inc.github }}" title="Github" target="_blank"><i class="icon icon-github black"></i></a>
+            {% if site.github %}
+                &middot;
+                <a href="https://github.com/{{ site.github }}" title="Github" target="_blank">
+                    Github<i class="icon icon-github black"></i></a>
             {% endif %}
-            <a href="/feed.xml" title="RSS Feed">
-                <i class="icon black icon-rss"></i>
-            </a>
+            &middot;
+            <a href="/feed.xml" title="RSS Feed">RSS Feed</a>
         </nav>
     </div>
 </footer>
