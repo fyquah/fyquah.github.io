@@ -24,7 +24,7 @@ layout: base
                             <a href="{{ post.url }}" rel="prefetch">
                                 {{ post.title }}
                             </a>
-                            <p class="excerpt"><em>{{ post.excerpt }}</em></p>
+                            <p class="excerpt"><em>{{ post.excerpt | strip_html | truncatewords: 50 }}</em></p>
                         </td>
                         <td class="time">
 
