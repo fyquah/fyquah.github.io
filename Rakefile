@@ -9,29 +9,6 @@ require "jekyll"
 GITHUB_REPONAME = "fyquah95.github.io"
 GITHUB_USERNAME = "fyquah95"
 
-def initialize_repo_and_add_origin
-  system "git init"
-  system "git remote add origin https://github.com/#{GITHUB_USERNAME}/#{GITHUB_REPONAME}"
-end
-
-namespace :code do
-  desc "Update your source code"
-  task :update do 
-    if `git checkout source` =~ /error/
-      STDOUT.puts "I couldn't find a branch named source, I am going to create one for you now"
-      `git checkout -b source`
-    end
-    system "git add -A"
-    STDOUT.puts "Please enter a commit message , enter <current-time> to get current time"
-    commit_msg = STDIN.gets.chomp
-    commit_msg.gsub! /<current-time>/ , Time.now.to_s
-    STDOUT.puts "Your commit message is"
-    STDOUT.puts commit_msg
-    system "git commit -m #{commit_msg.inspect}"
-    system "git push origin source:source"
-  end
-end
-
 namespace :post do
   desc "Generate new post layout"
   task :new , [:name] do |t ,arg|
