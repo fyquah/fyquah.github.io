@@ -32,6 +32,6 @@ linkedin: "fyquah95"
 github: "fyquah95"
 
 # Build settings
-markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
 permalink: /:title
