@@ -28,22 +28,32 @@
                     of breadth first search (BFS). This animation is intended to make the idea of BFS
                     easier to grasp via an animating example. Click Simulate to begin!
                 </p>
+                <form class="form-horizontal">
 			  <div class="form-group">
-                  <label>Cup 1 Volume</label>
+                  <label class="col-sm-3">Cup 1 Volume</label>
+                  <div class="col-sm-9">
 			    <input type="text" class="form-control event_input" id="input_first_cup_volume" placeholder="First Volume" value="5" />
+                  </div>
 			  </div>
 			  <div class="form-group">
-                  <label>Cup 2 Volume</label>
-			    <input type="text" class="form-control event_input" id="input_second_cup_volume" placeholder="Second Volume" value="4" />
+                  <label class="col-sm-3">Cup 2 Volume</label>
+                  <div class="col-sm-9">
+			        <input type="text" class="form-control event_input" id="input_second_cup_volume" placeholder="Second Volume" value="4" />
+                  </div>
 			  </div>
 			  <div class="form-group">
-                  <label>Target Volume</label>
-			    <input type="text" class="form-control event_input" id="input_target_cup_volume" placeholder="Target Volume" value="3" />
+                  <label class="col-sm-3">Target Volume</label>
+                  <div class="col-sm-9">
+			        <input type="text" class="form-control event_input" id="input_target_cup_volume" placeholder="Target Volume" value="3" />
+                  </div>
 			  </div>
 			  <div class="form-group">
-                  <label>Speed of Animation (just leave it as 1000 if you are unsure)</label>
-			    <input type="text" class="form-control event_input" id="input_target_speed" placeholder="Speed (Enter a value between 2 and 1999)">
+                  <label class="col-sm-3">Speed (Optional)</label>
+                  <div class="col-sm-9">
+			     <input type="text" class="form-control event_input" id="input_target_speed" placeholder="Speed (Enter a value between 2 and 1999)">
+                  </div>
 			  </div>
+                </form>
 			  <div class="form-group">
 			  	<button id="trigger_event_button" class='event_input btn btn-primary' onclick="triggerEventSimulation()" class="btn btn-default">Simulate</button>
 				</div>

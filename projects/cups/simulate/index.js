@@ -243,6 +243,6 @@ $(document).ready(function(){
         if(typeof query_property["first"] !== "undefined" )document.getElementById("input_first_cup_volume").value = Number(query_property["first"])
         if(typeof query_property["second"] !== "undefined" )document.getElementById("input_second_cup_volume").value = Number(query_property["second"])
         if(typeof query_property["target"] !== "undefined" )document.getElementById("input_target_cup_volume").value = Number(query_property["target"])
-        document.getElementById("input_target_speed").value = (typeof query_property["speed"] === "undefined") ? 1000 : Number(query_property["speed"])
+        document.getElementById("input_target_speed").value = (typeof query_property["speed"] === "undefined") ? "" : Number(query_property["speed"])
     }
 });
