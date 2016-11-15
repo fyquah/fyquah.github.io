@@ -193,6 +193,7 @@ var simulateEvent = function(VOLUME_X , VOLUME_Y , TARGET_VOLUME , speed){
 
         if(array_of_results === false){
             print_notice("Cannot find any possible ways to reach that state" , false , speed);
+            document.getElementById("trigger_event_button").disabled = false;
             //alert("No possible ways to reach that target volume!");
         }
         else{
@@ -232,9 +233,9 @@ var getUrlQueryStrings = function(){
 $(document).ready(function(){
     var query_property = getUrlQueryStrings();
     if(typeof query_property["target"] !== "undefined" && typeof query_property["first"] !== "undefined" && typeof query_property["second"] !== "undefined"){
-        var x = document.getElementById("input_first_cup_volume").value = Number(query_property["first"])
-        var y = document.getElementById("input_second_cup_volume").value = Number(query_property["second"])
-        var z = document.getElementById("input_target_cup_volume").value = Number(query_property["target"])
+        var x = document.getElementById("input_first_cup_volume").value = Number(query_property["first"]) || 5
+        var y = document.getElementById("input_second_cup_volume").value = Number(query_property["second"]) || 4
+        var z = document.getElementById("input_target_cup_volume").value = Number(query_property["target"]) || 3
         var speed = document.getElementById("input_target_speed").value = (typeof query_property["speed"] === "undefined") ? 1000 : Number(query_property["speed"])
         simulateEvent(x , y , z , speed)
     }
