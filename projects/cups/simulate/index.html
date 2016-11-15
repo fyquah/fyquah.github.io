@@ -12,11 +12,11 @@
 </head>
 <body>
 	<div class='container'>
+        <div class="page-header">
+            <h2>Water Pouring Problem Simulation</h2>
+        </div>
 		<div class='row'>
 			<div class='col-sm-6'>
-                <div class="page-header">
-                    <h2>Water Pouring Problem Simulation</h2>
-                </div>
                 <p>You have two cups. You want to obtain a given target volume of water. You can:</p>
                 <ul>
                     <li>Pour water from one cup to another</li>
@@ -41,7 +41,7 @@
 			    <input type="text" class="form-control event_input" id="input_target_speed" placeholder="Speed (Enter a value between 2 and 1999)">
 			  </div>
 			  <div class="form-group">
-			  	<button id="trigger_event_button" class=' event_input' onclick="triggerEventSimulation()" class="btn btn-default">Simulate</button>
+			  	<button id="trigger_event_button" class='event_input btn btn-primary' onclick="triggerEventSimulation()" class="btn btn-default">Simulate</button>
 				</div>
 				<br />
 				<div class='row'>
