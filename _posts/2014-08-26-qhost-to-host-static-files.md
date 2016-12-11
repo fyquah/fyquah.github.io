@@ -2,6 +2,7 @@
 layout: post
 title: Qhost | Host Static Files locally for development
 subtitle: 
+category: eng
 
 excerpt: An elegant solution to host static files for development on the local machine with minimal code, powered by sinatra
 

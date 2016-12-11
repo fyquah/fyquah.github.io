@@ -2,6 +2,7 @@
 layout: post
 title: Deploying a Ruby on Rails Application with Passenger
 subtitle: A simple guide to deploying a simple Rails application to VPS.
+category: eng
 
 excerpt: 
 

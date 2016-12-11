@@ -2,6 +2,7 @@
 layout: post
 title: Cup Pouring Problem
 subtitle: "Getting a volume of water using some cups with computer science"
+category: eng
 
 excerpt: "A classical computer science problem, exhibiting the strength of a simple graph searching technique"
 

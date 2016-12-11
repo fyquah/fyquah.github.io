@@ -2,6 +2,7 @@
 layout: post
 title: Pie Chart CSS3
 subtitle: A little homework written in purely HTML / CSS3 / Javascript
+category: eng
 
 excerpt: As I needed a pie chart for an assignment, I took the opportunity to try something new!
 

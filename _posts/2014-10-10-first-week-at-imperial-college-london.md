@@ -2,6 +2,7 @@
 layout: post
 title: First Week At Imperial College London
 subtitle: My first week at college
+category: diary
 
 excerpt: 
 

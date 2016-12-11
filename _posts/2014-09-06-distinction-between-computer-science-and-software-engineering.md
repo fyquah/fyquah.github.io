@@ -2,6 +2,7 @@
 layout: post
 title: Distinction Between Computer Science And Software Engineering
 subtitle: A major realization requred in the modern year of age
+category: eng
 
 excerpt: Undeniable, both fields do overlap each other. However, they are different fields although not clearly suggested by their names.
 

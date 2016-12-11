@@ -2,6 +2,7 @@
 layout: post
 title: I Moved Your Cheese
 subtitle: Thought on the book and living in a maze
+category: diary
 
 excerpt: "A truly insightful and inspiring read to reflect on our everyday doings"
 

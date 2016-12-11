@@ -2,6 +2,7 @@
 layout: post
 title: Youtube View Problem
 subtitle: A surprising fact of youtube Views figures
+category: eng
 
 excerpt: It is common to know that youtube views are distributed normally. But what would happen if you plot a graph of the frequency of the first digit of numbers?
 

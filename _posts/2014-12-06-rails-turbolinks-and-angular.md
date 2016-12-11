@@ -2,6 +2,7 @@
 layout: post
 title: Rails Turbolinks And AngularJS
 subtitle: 
+category: eng
 
 excerpt: 
 

@@ -2,6 +2,7 @@
 layout: post
 title: cli-yo | My First Ruby Gem
 subtitle: "You can now yo! from the command line , auto-magically!"
+category: eng
 
 excerpt: "My first attempt to build a Ruby Gem, with a fun purpose behind!"
 

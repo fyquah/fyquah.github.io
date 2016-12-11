@@ -2,6 +2,7 @@
 layout: post
 title: Computer Science And Economics Lecture In 45 Minutes
 subtitle: A great way to explain bitcoin, with computer sciece and economics in it!
+category: eng
 
 excerpt: 
 

@@ -2,6 +2,7 @@
 layout: post
 title: Blogging as a Diary
 subtitle: "A good , if not perfect , substitute to writing dairies"
+category: diary
 
 excerpt: "The reason behind me taking up blogging"
 

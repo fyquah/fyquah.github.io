@@ -2,6 +2,7 @@
 layout: post
 title: Thoughts Before Leaving For London
 subtitle: 
+category: diary
 
 excerpt: With the clock ticking, I will be eventually leaving my home soil to study in less than a day.
 
