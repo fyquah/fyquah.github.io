@@ -2,6 +2,7 @@
 layout: post
 title: Getting C++ Compilation Right
 subtitle:
+category: eng
 
 excerpt:
 
