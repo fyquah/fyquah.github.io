@@ -2,6 +2,7 @@
 layout: post
 title: Bullshit with Authority
 subtitle: A presentation technique with brings me several thoughts
+category: diary
 
 excerpt: Bullshitting calls for some citation, which automagically makes it non bullshitting! (because you are relying on true facts)
 

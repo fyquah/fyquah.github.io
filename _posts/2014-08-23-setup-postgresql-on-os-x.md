@@ -2,6 +2,7 @@
 layout: post
 title: Setup Postgresql On Os X
 subtitle: Coming from a Linux background to setup an awesome database on a database that operates slightly differently
+category: eng
 
 excerpt: Setting up one of the most powerful database for non-advanced users
 ---

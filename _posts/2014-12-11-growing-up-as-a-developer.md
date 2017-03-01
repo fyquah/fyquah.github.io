@@ -2,6 +2,7 @@
 layout: post
 title: Growing Up as a Developer
 subtitle: 
+category: diary
 
 excerpt: 
 

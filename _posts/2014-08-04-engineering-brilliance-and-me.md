@@ -2,6 +2,7 @@
 layout: post
 title: Engineering brilliance and Me
 subtitle: "Why does this phrase catch on me"
+category: eng
 
 excerpt: "Behind everything we see today, they are works of engineers"
 

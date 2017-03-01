@@ -2,6 +2,7 @@
 layout: post
 title: Reviving My Blog
 subtitle: I have stopped writing for quite a while.
+category: diary
 
 excerpt: A really practical lesson on how to keep a personal momentum going.
 

@@ -2,6 +2,7 @@
 layout: post
 title: Site Popup And Spinner
 subtitle: Making a div at the center of the page
+category: eng
 
 excerpt: Making a div at the center of the page
 
