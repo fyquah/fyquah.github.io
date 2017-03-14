@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hardware Synthesis Of Weakly Consistent C Concurrency
-category: eng
+category: paper-review
 subtitle:
 
 excerpt:

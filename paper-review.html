@@ -1,37 +1,27 @@
 ---
 layout: base
+permalink: /paper-review/
 ---
 
 <article class="article">
     <div class="container">
         <div>
             <h2>
-                Fu Yong's Corner of the Internet
+                Paper Review
             </h2>
-            <p><em>A simple blog, with (almost) nothing but contents</em></p>
-            <p style="font-size: 12px">
-                I am an aspiring computer-scientist and engineer. You can read more about me
-                <a href="/about-me/">here</a>. You can also check out my blog posts below or
-                <a href="/cv.pdf">CV</a>. If you wish to contact me, feel free to drop me a
-                message on twitter (<a href="https://twitter.com/fyquah95">@fyquah95</a>) or
-                shoot me an email at <a href="mailto:fuyong@fyquah.me">fuyong@fyquah.me</a>
-                or <a href="mailto:fuyong.quah14@imperial.ac.uk">fuyong.quah14@imperial.ac.uk</a>
-            </p>
-            <p style="font-size: 12px">
-              I read papers (that mostly deal with FPGAs), and review about them <a href="/paper-review">here</a>
-            </p>
         </div>
+        <p>I like reading papers but have trouble keep track of what I have read. This site is simply a site to summarize what I have read.</p>
+        <p>You can expect to find papers relating to FPGAs here, as that's my academic interest. Occasionally, though, you can expect other papers.</p>
 
         <table class="index">
             <thead>
                 <th>Title</th>
                 <th>Date</th>
             </thead>
-            {% for post in site.categories.eng %}
+            {% for post in site.categories["paper-review"] %}
               {% unless post.draft %}
                     <tr>
                         <td class="time">
-
                             <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
                         </td>
                         <td class='title'>
@@ -55,9 +45,5 @@ layout: base
             <a href="/page{{ paginator.next_page }}" class="btn btn-outline">Older ›</a>
           {% endif %}
         </section>
-        <br />
-        <div>
-            <p  style="font-size: 12px">Posts that show up here are somewhat related to engineering, which is the reason I think why most people are here anyways. If you are interested in my non-eng writings, check out my <a href="/diary.html">public diary</a>.</p>
-        </div>
     </div>
 </article>
