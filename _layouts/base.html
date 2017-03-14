@@ -11,20 +11,19 @@
 <body>
 
 <header class="header">
-    <nav id="navigation">
-        <table>
-            <tr>
-                <td><a href="/" class="home">Home</a></td>
-                <td>&middot;</td>
-                {% if site.about_link %}
-                    <td>
-                        <a href="{{ site.about_link }}">About Me</a>
-                    </td>
-                {% endif %}
-
-            </tr>
-        </table>
-    </nav>
+  <nav id="navigation">
+    <tr>
+      <td><a href="/" class="home">Home</a></td>
+      <td>&middot;</td>
+      {% if site.about_link %}
+          <td>
+              <a href="{{ site.about_link }}">About Me</a>
+          </td>
+      {% endif %}
+      <td>&middot;</td>
+      <td><a href="/paper-review" class="home">Paper Reviews</a></td>
+    </tr>
+  </nav>
 </header>
 
 
@@ -52,8 +51,10 @@
                     Github<i class="icon icon-github black"></i></a>
             {% endif %}
             &middot;
-            <a href="/feed.xml" title="RSS Feed">RSS Feed</a>
         </nav>
+    </div>
+    <div>
+      This site was generated using jekyll.
     </div>
 </footer>
 

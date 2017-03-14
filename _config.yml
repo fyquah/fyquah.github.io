@@ -32,6 +32,4 @@ linkedin: "fyquah95"
 github: "fyquah95"
 
 # Build settings
-kramdown:
-  input: GFM
 permalink: /:title

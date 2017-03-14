@@ -12,9 +12,9 @@ excerpt:
 
 [Link to paper](http://cas.ee.ic.ac.uk/people/gac1/pubs/NadeshFPGA17.pdf) 
 
-The paper addresses challenges in synthesizing HLS programs to hardware which uses Sequentially consistent (SC) atomics an weakly consistent atomics
-with C11 defined atomics. The case for this paper is suggesting that these atomic-based approaches can be more efficient than using locks both in
-terms of resources and runtime.
+The paper addresses challenges in synthesizing HLS programs to hardware which uses Sequentially consistent (SC) atomics and weakly consistent atomics
+with C11 defined atomics. The paper suggests that these atomic-based approaches can be more efficient than using locks both in terms of resources
+and runtime.
 
 The work implements atomic accesses on [Legup HLS](http://legup.eecg.utoronto.ca/), which uses C11 atomic locks and pthreads.
 
@@ -30,24 +30,26 @@ the potential for out of order overlapping scheduling.
 
 ## C11 Memory Consistency Model
 
-The C11 consistency model can be roughly understood as:
+The C11 consistency model can be roughly understood as the following. Note that this is not the formal definition of the atomic
+operations in the C11 specification.:
 
 - atomic load / store cannot be reorder with another atomic load / store to the same location (coherence)
-- relaxed atomic load cannot be reordered  be reordered anywhere within its thread
-- acquire atomic load cannot be reordered with loads or stores _after_ it in program order.
-- release atomic store cannot be reordered with loads / stores that are sequenced before it
+- relaxed atomic load can be reordered anywhere within its thread
+- acquire atomic load cannot be reordered with loads or stores _after_ it in program order
+- release atomic store cannot be reordered with loads / stores that are sequenced _before it_
 - SC atomic load / store cannot be reordered with any other load / stores
 
 
 ## Method
 
-The paper demonstrates atomic HLS synthesis by extending LegUp Pthread flow with three of the memory access semantics. As mentioned in an earlier section,
-LegUp memory access scheduling is based on a constraint scheduler. Hence, the methods here describes the constraints appended to the original constraint
-solver.
+The paper demonstrates atomic HLS synthesis by extending LegUp Pthread flow with three of the memory access semantics.
+As mentioned in an earlier section, LegUp memory access scheduling is based on a constraint scheduler. Hence,
+the methods here describes the constraints appended to the original constraint solver.
 
-I will not include the formal definitions of the constraints - they are in Section 4.1, 4.2 and 4.3 respectively of the original paper.
+I will not include the formal definitions of the constraints - they are in Section 4.1, 4.2 and 4.3 respectively
+of the original paper.
 
-In the examples, considered the following example:
+In the methods described below, consider the following example:
 
 ~~~python
 
@@ -134,7 +136,8 @@ r3 = ld_non_atomic(z) |   |   | X | X
 
 The paper demonstrates its results on a SPSC Circular Buffer by comparing an implementation without locks
 (hand-tuned for correctness), 3 lock-based implementations and 3 lock-free implementations (the 3 methods
-discussed earlier).
+discussed earlier). Circular buffer is a data structure commonly used in the linux kernel and boost C++
+libraries.
 
 ![Throughput and LUT utilization of the implementations](/images/papers/hls_concurrency_1.png)
 

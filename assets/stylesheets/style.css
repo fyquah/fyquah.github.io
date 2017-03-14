@@ -4,7 +4,7 @@
 
 div {
     line-height: 140%;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 div.border {
@@ -93,15 +93,16 @@ article#about-me img.avatar {
     margin: 20px;
 }
 
-.highlight > pre
-{
-    padding: 5px;
+pre {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
     font-size: 13px;
     font-family: "Droid Sans Mono",;
     background-color: #e2e2e2;
 }
 
-.highlight > pre > code {
+pre code {
     white-space: pre;
     white-space: pre-wrap;
     word-break: break-all;
