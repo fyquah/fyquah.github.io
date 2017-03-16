@@ -9,6 +9,26 @@ require "jekyll"
 GITHUB_REPONAME = "fyquah95.github.io"
 GITHUB_USERNAME = "fyquah95"
 
+namespace :review do
+  desc "Generate new post layout"
+  task :new , [:name] do |t ,arg|
+    class String
+      def titleize
+        self.split(/ |\_/).map(&:capitalize).join(" ")
+      end
+    end
+    title = arg["name"] || "paper-review"
+    file_name = "#{Time.now.strftime('%Y-%m-%d')}-#{title}.md"
+    puts "post name to be generated in ./_posts is #{file_name}"
+    base_format = File.open("./_drafts/paper.md" , "r"){ |f| f.read }
+    base_format.sub!("<title-goes-here>" , title.gsub(/[-_]/ , " ").titleize)
+    f = File.new("./_posts/#{file_name}" , "w")
+    f.write(base_format)
+    f.close
+  end
+end
+
+
 namespace :post do
   desc "Generate new post layout"
   task :new , [:name] do |t ,arg|
