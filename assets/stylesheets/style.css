@@ -25,23 +25,23 @@ header.header table td {
     padding: 2px; 
 }
 
-article.article div.container table.index thead th {
+article.article div.main table.index thead th {
     border-bottom : 2px solid #95a5a6;
     padding-top: 10px;
     padding-bottom : 10px;
 }
 
-article.article div.container table.index tr td.title {
+article.article div.main table.index tr td.title {
     padding: 3px;
 }
 
-article.article div.container table.index tr td.title p.excerpt {
+article.article div.main table.index tr td.title p.excerpt {
     padding-right: 10px;
     padding-left: 3px;
     font-size: 12px;
 }
 
-article.article div.container table.index tr td.time {
+article.article div.main table.index tr td.time {
     padding: 3px;
 }
 
@@ -59,27 +59,27 @@ div.meta {
 }
 
 @media (max-width: 768px) {
-    article.article div.container  {
+    article.article div.main  {
 
     }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-    article.article div.container  {
+    article.article div.main  {
         padding-left: 10%;
         padding-right: 10%;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-    article.article div.container  {
+    article.article div.main  {
         padding-left: 13%;
         padding-right: 13%;
     }
 }
 
 @media (min-width: 1200px) {
-    article.article div.container  {
+    article.article div.main  {
         padding-left: 20%;
         padding-right: 20%;
     }
