@@ -176,7 +176,7 @@ google's cluster manager.
 </p>
 
 <p>
-  I worked on this project with two other friends in Fishackathon 2015,
+  I worked on this project with <a href='http://hr.tl/'>Tom Hartley</a> in Fishackathon 2015,
   sponsored by the State Department of the United States. Our project won the
   global hackathon organized in over 10 cities throughout the world.
 </p>
