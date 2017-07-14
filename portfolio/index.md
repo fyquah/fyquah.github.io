@@ -39,14 +39,14 @@ title: Portfolio
       description="
 <p>
   This bot plays Basketball FFVR, otherwise known as the Facebook messenger
-  basketball game, automatically, destroying most human high scores. The bot
-  treats the game as a blackbox, essentially playing the game simply by moving
-  the mouse as a human would to control the ball's projection.
+  basketball game, automatically, destroying even the best human high scores.
+  The bot treats the game as a blackbox, essentially playing the game simply by
+  moving the mouse as a human would to control the ball's projection.
 </p>
 <p>
-  This little project was created in a skiing trip when I grew frustrated that I
-  from not being able to beat my friend in the game, despite trying for over 3 days.
-  The gameplay is based on simple physics laws.
+  I worked on this project in a ski trip when I grew frustrated
+  from the inability to beat my friend's high score (165 points), after trying
+  for over three days. The bot's gameplay is based on simple physics laws.
   <a target='_blank' href='https://youtu.be/_TRNYrzJhRQ'>
   Click here for a video demo</a>. The source code is available in
   <a target='_blank' href='https://github.com/fyquah95/basketball'>github</a>.
@@ -63,11 +63,33 @@ title: Portfolio
 <p>
   Along with the Imperial College Robotics Society, I have participated
   in the UK round of Eurobot 2017. I worked on the computer vision, localization
-  and motor controller algorithms of the robot. I have also coordinated
-  the software development throughout the team.
+  and motor controller algorithms of the robot.
 </p>
 "
 %}
+
+{% include portfolio/project.html
+      image_url="/images/portfolio/google-logo.png"
+      name="<a href='https://www.google.com/about'>Google</a> - Software Engineering Intern"
+      when="June 2016 - September 2016"
+      description="
+      <p>
+      I was a software engineer intern in Google, Mountain View CA, United States.
+      </p>
+      <p>
+I Worked on <a target='_blank' href='https://www.github.com/google/pytype'>pytype</a>,
+a python type inference and static analysis tool. My main contribution was integrating
+pytype with an internal code review tool to facilitate the company's transition to
+typed python.
+</p>
+<p>
+My work helped discovered bugs in several projects and was adapted by several
+teams, including the python team and
+<a target='_blank' href='https://research.google.com/pubs/pub43438.html'>borg</a> ,
+google's cluster manager.
+</p>"
+%}
+
 
 {% include portfolio/project.html
       image_url="/images/portfolio/c-compiler.png"
@@ -75,11 +97,18 @@ title: Portfolio
       when="January - March 2016"
       description="
 <p>
-  Along with the Imperial College Robotics Society, I have participated
-  in the UK round of Eurobot 2017. I worked on the computer vision, localization
-  and motor controller algorithms of the robot. I have also coordinated
-  the software development throughout the team.
+  I wrote a C-compiler, from scratch, in C, targeting the MIPS 1 architecture.
+  My compiler supported a turing-complete subset of C operations, namely:
 </p>
+
+<ul>
+  <li>BODMAS arithmetic operations</li>
+  <li>if-else, switch statements</li>
+  <li>Function calls</li>
+  <li>Goto</li>
+  <li>For loops, While loops, Do-while loops</li>
+  <li>Whie loops</li>
+</ul>
 "
 %}
 
@@ -90,17 +119,19 @@ title: Portfolio
       description="
 <p>
   RAMEAR is a project heavily based on
-  <a target='_blank' href='https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf'>GSMem (Mordechai Guri et al)</a>
-  . This project transmits data from and air-gapped computer (a computer that is
+  <a target='_blank' href='https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf'>
+  GSMem [Mordechai Guri et al]</a>
+  . In this project, we program an air-gapped computer (a computer that is
   not connected to the external world via any means, including ethernet,
-  bluetooth, wifi etc.) using the memory bus as an antenna. This is achived
-  by periodically bombarding the memory bus to denote a HIGH BIT and using
-  the average environment noise as a LOW BIT.
+  bluetooth, wifi etc.) using the memory bus as an antenna, to transmit
+  data to a signal receiver. This is achieved by periodically bombarding
+  the memory bus to denote a HIGH BIT and using the average environment
+  noise as a LOW BIT.
 </p>
 
 <p>
   I worked on this project with 3 others in PennApps Spring 2016, one of the
-  largest student-run hackathon in the the world. Our project won the grand
+  largest student-run hackathon in the world. Our project won the grand
   prize in the hackathon.
 </p>
 
@@ -113,6 +144,21 @@ title: Portfolio
 "
 %}
 
+
+{% include portfolio/project.html
+      image_url="/images/portfolio/netcraft-logo.png"
+      name="<a href='https://www.netcraft.com/'>Netcraft</a> - Internet Services Developer Intern"
+      when="June - August 2015"
+      description="
+<p>
+    I worked on a hosting company classification project. My tasks mainly comprises of
+    writing tools to partially automate data classification and designing and implementing
+    features to aid manual data classification. I wrote Perl, bash and PHP
+    extensively in this internship.
+</p>
+"
+%}
+
 {% include portfolio/project.html
       image_url="/images/portfolio/fishotron.png"
       name="Fishotron - Fishackathon 2015"
@@ -120,7 +166,7 @@ title: Portfolio
       description="
 <p>
   Fishotron is a computer-vision based application that measures the size of
-  a fish using a fidality markers and computer vision.
+  a fish using chilli tags and a mobile phone.
 </p>
 
 <p>
@@ -149,17 +195,20 @@ title: Portfolio
       when="June 2015"
       description="
 <p>
-  The video was a pure FPGA-based passive autofocus application. The application
-  takes a real-time camera feed and adjusts a custom-made focal knob to get a
-  a focused image to be. I worked on this project with a coursemate as part of
-  our First Year Project. We were awarded the best first year project prize.
+  The application takes a real-time camera feed and adjusts a custom-made
+  focal knob to get a a focused image to be. The video was a pure
+  FPGA-based passive autofocus application.
+  The control flow logic was implemented using a C++ based HLS tool and some
+  latency-sensitive blocks using verilog. The algorithm is a heuristic search
+  for the peak of the graph that maximizes the number of edges in the resultant
+  image.
 </p>
 
+
 <p>
-  We implemented the control flow logic using a C++ based HLS tool and some latency-
-  sensitive blocks using verilog. The algorithm is a heruistic search for the peak
-  of the graph that maximizes the number of edges in the resultant image.
-</p>
+ I worked on this project with a coursemate as part of
+  our First Year Project. We were awarded the best first year project prize.
+  </p>
 
 <p>
   We have a
@@ -178,65 +227,20 @@ title: Portfolio
       when="August 2014"
       description="
 <p>
-  This was one of my first software-related projects, where I wrote a
-  web-based simulation (in addition to simulation in a few other languages)
-  of the water-pouring problem to demonstrate Breadth-first search and
-  euclid's extended algorithm. This project was used in one of the Malaysia
-  Computing Olympiad training camp to demonstrated the mentioned algorithms.
+  I worked on a web-based simulation (in addition to simulation in a
+  few other languages) of the water-pouring problem to demonstrate
+  Breadth-first search and euclid's extended algorithm.
+  This project was used in one of the Malaysia Computing Olympiad training
+  camp to demonstrated the mentioned algorithms.
 </p>
 
 <p>
-  There is a demo
-  <a target='_blank' href='http://www.fyquah.me/projects/cups/simulate/'>here</a>
-  and the source code is open sourced on
-  <a target='_blank' href='https://github.com/yihangho/cups'>github</a>.
+  <a target='_blank' href='http://www.fyquah.me/projects/cups/simulate/'>
+  Click here to view the project</a>. The code
+  <a target='_blank' href='https://github.com/yihangho/cups'>
+  source code is open sourced on github</a>.
 </p>
 "
 %}
 
 </div>
-
-
-# Professional Experience
-
-<div class="container">
-
-{% include portfolio/work-experience.html
-      image_url="/images/portfolio/google-logo.png"
-      from="June 2016"
-      to="September 2016"
-      company="Google"
-      location="Mountain View CA, United States"
-      company_url="https://www.google.com/about"
-      title="Software Developer Intern"
-      description="
-      <p>
-Worked on <a target='_blank' href='https://www.github.com/google/pytype'>pytype</a>,
-a python type inferencer and static analysis tool. My main contribution was deploying
-pytype to an internal code review tool to facilitate the company's transtiiton to
-typed pattern.
-</p>
-<p>
-My work helped discovered bugs in several projects and was adapted by several
-teams, including the python team and
-<a target='_blank' href='https://research.google.com/pubs/pub43438.html'>borg</a>
-, google's cluster manager.
-</p>"
-%}
-
-{% include portfolio/work-experience.html
-      image_url="/images/portfolio/netcraft-logo.png"
-      company="Netcraft"
-      from="June 2015"
-      to="August 2015"
-      location="Bath, United Kingdom"
-      company_url="https://www.netcraft.com/"
-      title="Internet Services Developer Intern"
-      description="
-Worked on hosting company classification project, writing tools to partially automate
-data classification and aid manual data classification primarily in Perl and PHP.
-"
-%}
-</div>
-
-
