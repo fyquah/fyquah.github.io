@@ -9,39 +9,30 @@ excerpt:
 ---
 
 We are given a list of samples `[x1 ; x2 ; x3; ...; xn]` and we know that
-they originate from a uniform distribution. What are the most likely
-parameters of the uniform distribution?
+they originate from a uniform distribution. What are the parameters of the
+uniform distribution?
 
 For simplicity, we can assume that `x[i] <= x[i+1]` and `x[1] < x[n]`. This
-condition simply means that `Set.length (Set.of_list samples)` >= 2
+condition implies that we presort the sampled numbers and there are at least
+2 unique numbers in the sample.
 
-## Disclaimer (-ish)
+## Disclaimer(-ish)
 
 I am writing this text mostly because my mentor at my internship mentioned
 this problem to me. As I was solving the problem, I felt that I have
-managed to grasp a better understanding of the method simply by looking
-at such toy examples. In other words, an unintended consequence of this
+managed to grasp a better understanding of bayesian methods
+simply by looking at such toy examples. In other words, an unintended consequence of this
 blog post is to hopefully explain what bayesian estimation mean in the
 context of model fitting. In particular, we will be studying a specific case
-where the distribution is known to be uniform and the parameters are to be
-sampled from a continuous distribution.
-
-I will try to leave out as many mathematical jargons as possible, but I'd
-use the following somewhat extensively:
-
-- $$X \space\forall\space y$$ statement X is true forall conditions y
-- $$X \wedge Y$$ - when both X AND Y is true
-- $$X \vee Y$$ - when either X OR Y is true
-
-Throughout 
+where the distribution is known to be uniform and we want to obtain
+a probability distribution over possible parameter values.
 
 ## What is a Uniform Distribution
 
 A [continuous uniform distribution](https://en.wikipedia.org/wiki/Uniform_distribution)
 is a distribution defined by two parameters, `a` and `b`, where `a` <= `b`
 and where the probability of getting any number between `a` and `b` is
-equal. In the problem that we are studying, as the problem deals with real
-numbers, this would be a continuous uniform distribution.
+equal.
 
 ## A Naive Argument
 
@@ -51,21 +42,13 @@ assuming:
 
 1. The estimated parameters is independent of the number of samples.
 2. The estimated parameters would only be a function of two numbers, that is
-$$x_1$$ and $$x_n$$. I found it really hard to wrap my head around this
-claim.
-
-I was not convinced that either of the above are fair assumptions to make,
-so I went on to figure out the maths with my mentor.
-
-As it turns out, both assumptions were right (please do read on, the math is
-pretty interesting!)
+$$x_1$$ and $$x_n$$.
 
 ## A Bayesian Argument
 
 What we are trying to do here is to perform a
 [Maximum a posteriori (MAP) Esimation](https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation)
-of the parameters using bayes rule. In this particular problem, we can write
-bayes rule as:
+of the parameters. In this particular problem, we can write bayes rule as:
 
 $$ P(parameters\space | \space observation) = \frac{P(observation\space | \space parameters) \space P(parameters)}{P(observation)} $$
 
@@ -73,8 +56,7 @@ In the above equation, the $$ P(parameters) $$ refers to the prior belief on
 probability of a given set of parameters. If we are dealing with a discrete
 distribution, $$ P(X) $$ would refer to actual probabilities. In the case
 of continuous distributions, $$ P(x) $$ refers to the probability density
-function. In this problem, as mentioned earlier, our samples would be obtained
-from a continuous space. Hence, we will be dealing with continuous distributions.
+function.
 
 For example, in our problem, $$ P(\theta = (0, 1)) $$ would refer to the
 probability that $$ P(\theta = (0, 1)) $$ is the right distribution without
@@ -93,7 +75,7 @@ for the observed data.
 
 - $$P(D \mid \theta)$$ - Likelihood function - informally, this is
 the probability that we obtain the given observation assuming some values
-of parameters.
+for the parameters.
 
 - $$P(\theta)$$ - Prior belief on the parameter space without making any
 observations.
@@ -115,7 +97,7 @@ without taking special precaution.
 
 We have Bayes' rule - let's apply it! However, without defining any
 bounds on the samples and parameters, there is no clear notion on how we
-can compute the terms we require to apply Bayes' rule as mentioned above.
+can compute the terms we required to apply Bayes' rule.
 
 One might argue that $$ P(D) = 0\space\forall\space D $$, and one would be
 (somewhat) correct! The intuitive argument to this claim is to imagine an
@@ -147,10 +129,10 @@ $$
 
 We can do a sanity check by integrating the above equation from $$-L$$ to 
 $$L$$ and making sure it is equal to 1. The bounds of the integral of $$a$$
-is from $$-L$$ to $$L$$, whereas the bounds of the ingegral of $$b$$ is from
-$$a$$ to $$L$$. Inituitively, you can imagine the integration area as a
+is from $$-L$$ to $$L$$, whereas the bounds of the integral of $$b$$ is from
+$$a$$ to $$L$$. Intuitively, you can imagine the integration area as a
 triangle of length and height 2L. The area of the triangle is $$2 L^2$$ and
-since all possible values of the parameters within the non-zero parameter
+since all possible values of the parameters in the parameter space with non-zero probability
 space are equally likely, the pdf over the non-zero parameter space should
 be the reciprocal of the total area.
 
@@ -174,13 +156,13 @@ P(D = (x_1, x_2, ...., x_n)) =
 \int_{-L}^{L} \int_{-L}^{L} P(D | \theta = (a,b)) \space P(\theta = (a,b)) \space db \space da
 $$
 
-The normalizing constant is simply an of $$ P(D | theta) $$ over the entire
+The normalizing constant is simply the integral of $$ P(D | theta) $$ over the entire
 parameter space. In most cases when we are dealing with complex
 distributions, especially in the context of machine learning, this constant
-is very much intractable. This is one of the reasons why Bayesian machine
-learning is hard. One of the methods used to estimate this normalizing
+is non tractable. This is one of the reasons why Bayesian machine
+learning is "hard". One of the methods used to estimate this normalizing
 constant is using [Monte Carlo Markov Chain](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo)
-methods to sample from this distribution and compute the integral.
+methods to sample from this distribution and estimate the integral.
 
 In the problem we are dealing with, fortunately, $$P(D)$$ is analytically
 tractable:
@@ -196,7 +178,7 @@ and similarly, $$P(D = (x_1, x_2, ...., x_n) | theta = (a, b)) = 0 \space
 \forall \space a > x_1 \vee b < x_n$$. Since we've assumed that the samples
 (and implicitly, the parameters) are confined by a space of $$-L$$ to $$L$$,
 the non-zero probability values of our limits are $$ (-L, x_1) $$ for $$a$$
-and $$(x_2, L)$$ for $$b$$.
+and $$(x_n, L)$$ for $$b$$.
 
 And we can proceed with integration as follows. The resultant integral is
 as follows, I'll leave solving the integral an exercise for the reader.
@@ -208,8 +190,7 @@ P(D = (x_1, x_2, ...., x_n)) =
 \bigg)
 $$
 
-
-I promise the resultant equation will be less monstrous which less terms
+I promise the final equation will be less monstrous and contain less terms
 than this!
 
 ### Applying Bayes Rule
@@ -225,7 +206,7 @@ P(\theta = (a, b) | D = (x1, x2, ...., xn)) =
 $$
 
 Applying the terms we've obtained above, we'd arrive at the following
-equation. I would once again leave most of the messy maths to the reader.
+equation. I would once again leave out most of the messy maths.
 
 $$
 
@@ -242,7 +223,7 @@ P(\theta = (a, b) | D = (x1, x2, ...., xn)) = \left\{\begin{aligned}
 \right.
 $$
 
-## To Infinity and Beyond
+## Applying the Limits
 
 Earlier when we are solving this equation, we have constrained the samples
 (and implicitly, the parameters) to be in the range $$(-L, L)$$. As it turns
@@ -300,15 +281,25 @@ P(width | D) = \frac{(n - 1) (n - 2) (x_n - x_1)^{n-2}}{ width^n }
 $$
 
 This suggests that the decay probability of width as we increase it from
-$$ x_n - x_1 $$ decays at an exponential rate with respect to $$n$$. This
+$$ x_n - x_1 $$ decays at a rate with exponential with respect to $$n$$. This
 is somewhat expected, but illustrated the strength of bayesian-based
 parameters estimation - we get an idea of how confident we are with our
-parameter values.
+parameter estimations.
 
-When we searching for the value of $$(a, b)$$ the yields that maximum
-posterior probability, we are essentially looking at the mode of the
+When we searching for the value of $$(a, b)$$ that yields that maximum
+posterior probability, we are essentially looking for the mode of the
 posterior distribution. What if we consider the mean (the expected value) of
-$$(a, b)$$?
+$$(a, b)$$? This can be obtained by solving the integral:
+
+$$
+E[a] = \int_{-\infty}^{x_1} a \int_{x_n}^{\infty} \frac{(n - 1) (n - 2) (x_n - x_1)^{n-2}}{ (b - a)^n } \space db \space da
+$$
+
+$$
+E[b] = \int_{x_n}^{\infty} b \int_{-\infty}^{x_1} \frac{(n - 1) (n - 2) (x_n - x_1)^{n-2}}{ (b - a)^n } \space da \space db
+$$
+
+Which will give us the following:
 
 $$
 E[a] = x_1 - \frac{x_n - x_1}{n - 3}
@@ -319,21 +310,19 @@ E[b] = x_n + \frac{x_n - x_1}{n - 3}
 $$
 
 $$
-E[a - b] = E[a] - E[b] = 2\space\frac{x_n - x_1}{n - 3}
+E[b - a] = E[b] - E[a] = x_n - x_1 + 2\space\frac{x_n - x_1}{n - 3}
 $$
 
 I find this to be a really nice and intriguing result. Nice because we have
 managed to show that in a unbounded sample space, we have the mean width
 of the distribution to be proportional to the width of our sample size, and
 (somewhat) inversely proportional to the number of samples we have collected.
-I find the result somewhat intriguing because of the $$n - 3$$ term. From an
-intuition perspective, I do not understand why $$n - 3$$ would be the
-denominator.
+Intriguing because of the $$n - 3$$ term. From an intuition perspective, I
+do not understand why $$n - 3$$ would be the denominator.
 
 To go about the cases where $$n <= 3$$, we will need to account for some
 corner cases in integration (Recall that integrating $$\frac{1}{x^n}$$ when
 $$n = 1$$ yields $$ln(x)$$).
-
 
 I'd be interested if anyone can come up with a plausible explanation
 for the $$n - 3$$ term below. If you do, please do drop me an email at
