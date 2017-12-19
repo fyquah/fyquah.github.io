@@ -37,7 +37,7 @@ Do $$p_x$$ and $$p_y$$ refer to the same value?
 
 ## What?
 
-I would argue that $$P(X) = p_x$$\* and $$P(X \space | \space the_thought_of_the_event) = p_y$$.
+I would argue that $$P(X) = p_x$$\* and $$P(X \space | \space the \space thought \space of \space the \space event) = p_y$$.
 That is, simply by considering the event's existence, you have
 subconsicously chose a different probability value to estimate.
 It is somewhat paradoxical -- in both cases, you do not explicitly
@@ -46,13 +46,13 @@ explicitly considered it.
 
 How can we circumvent such biases? This is a very classic example of
 narrative fallacy. It is incredibly difficult to erradicate this subconscious behaviour.
-Nevertheless, it still helps to know that it exists, as we can make
+Nevertheless, it still helps to know that it exists, as we can take
 measures to prevent cathostrophic consequences due to overconfidence
 / underconfidence in the probability of such events.
 
 I believe expectation scenarios similar to the one presented above is
 far more common than most of us would care to admit (myself included).
 
-\* You can even go one step further argue that $$P(X | event_has_happened_before) = p_x$$,
+\* You can even go one step further argue that $$P(X | event \space has \space happened \space before) = p_x$$,
 but the key point here is that the sole thought of an event's existence
 alters estimation results.
