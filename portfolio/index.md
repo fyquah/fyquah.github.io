@@ -23,7 +23,7 @@ title: Portfolio
 
 {% include portfolio/project.html
       image_url="/images/portfolio/janestreet-logo.png"
-      name="<a href='https://www.google.com/about'>Jane Street Capital</a> - Software Developer Intern
+      name="<a href='https://www.google.com/about'>Jane Street Capital</a> - Software Developer Intern"
       when="April 2017 - September 2017"
       description="
 <p>
@@ -37,6 +37,7 @@ adapted in functional programming and type systems. I have worked on various
 things here, including performance patches to the Flambda, an optimizing pass,
 in the OCaml compiler.
 </p>
+
 "
 %}
 
