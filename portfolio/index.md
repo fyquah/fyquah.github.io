@@ -13,17 +13,6 @@ title: Portfolio
             <p>October 2014 - Present</p>
             <p><em>MEng Electronic and Information Engineering</em></p>
         </div>
-
-        <div class="col-sm-2"><img src="/images/portfolio/janestreet-logo.png" /></div>
-        <div class="col-sm-4">
-            <h3><a href="https://www.janestreet.com/">Janestreet Capital</a></h3>
-            <p>April 2017 - Present</p>
-            <p><em>Software Developer Intern - London, United Kingdom</em></p>
-            <p>
-            I am currently doing a 6-month placement in Jane Street as a Software
-            developer, primarily writing Ocaml, a functional programming language.
-            </p>
-        </div>
     </div>
 </div>
 
@@ -31,6 +20,25 @@ title: Portfolio
 # Projects
 
 <div class="container">
+
+{% include portfolio/project.html
+      image_url="/images/portfolio/janestreet-logo.png"
+      name="<a href='https://www.google.com/about'>Jane Street Capital</a> - Software Developer Intern
+      when="April 2017 - September 2017"
+      description="
+<p>
+    I was a software engineer intern in London, United Kingdom.
+</p>
+<p>
+<p>
+I worked on distributed systems, compilers and task parallelisation at
+Jane Street. I written primarily OCaml during my time here and have become
+adapted in functional programming and type systems. I have worked on various
+things here, including performance patches to the Flambda, an optimizing pass,
+in the OCaml compiler.
+</p>
+"
+%}
 
 {% include portfolio/project.html
       image_url="/images/portfolio/basketball.png"
