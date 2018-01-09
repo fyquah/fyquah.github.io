@@ -32,9 +32,9 @@ title: Portfolio
 <p>
   I worked on distributed systems, compilers and task parallelisation at
   Jane Street. I written primarily OCaml during my time here and have become
-  adapted in functional programming and type systems. I have worked on various
-  things here, including performance patches to the Flambda, an optimizing pass,
-  in the OCaml compiler.
+  adapted in functional programming and type systems. Some of my work
+  included performance patches to the OCaml compiler's optimizing pass,
+  Flambda.
 </p>"
 %}
 
