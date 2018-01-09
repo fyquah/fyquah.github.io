@@ -27,18 +27,15 @@ title: Portfolio
       when="April 2017 - September 2017"
       description="
 <p>
-    I was a software engineer intern in London, United Kingdom.
+  I was a software engineer intern in London, United Kingdom.
 </p>
 <p>
-<p>
-I worked on distributed systems, compilers and task parallelisation at
-Jane Street. I written primarily OCaml during my time here and have become
-adapted in functional programming and type systems. I have worked on various
-things here, including performance patches to the Flambda, an optimizing pass,
-in the OCaml compiler.
-</p>
-
-"
+  I worked on distributed systems, compilers and task parallelisation at
+  Jane Street. I written primarily OCaml during my time here and have become
+  adapted in functional programming and type systems. I have worked on various
+  things here, including performance patches to the Flambda, an optimizing pass,
+  in the OCaml compiler.
+</p>"
 %}
 
 {% include portfolio/project.html
@@ -59,9 +56,7 @@ in the OCaml compiler.
   <a target='_blank' href='https://youtu.be/_TRNYrzJhRQ'>
   Click here for a video demo</a>. The source code is available in
   <a target='_blank' href='https://github.com/fyquah95/basketball'>github</a>.
-</p>
-
-"
+</p>"
 %}
 
 {% include portfolio/project.html
