@@ -22,6 +22,39 @@ title: Portfolio
 <div class="container">
 
 {% include portfolio/project.html
+      image_url="/images/portfolio/solitaire-bot.png"
+      name="Messenger Solitaire Bot"
+      when="September 2017"
+      description="
+<p>
+  I wrote a bot to play solitaire on messenger. Before you ask -- NO, it does
+  not use any form of machine learning.
+</p>
+<p>
+  The core principle of the algorithm is simple. Based on the current state
+  (and the current state only), a list of actions with preference is given.
+  Execute the one with the highest preference. Keep doing this unil the program
+  achieves a fixed point. While it is not guranteed that the program wins
+  all games, well designed rules and state space ensure that the execution
+  always terminate.
+</p>
+<p>
+  The point of the bot IS NOT to win the game all the time. It is, rather,
+  to win enough times to humuliate human scores.
+</p>
+<p>
+  The bot was written in in a mix of Java and C++. Java is used for it's
+  genericity with the Robot Class. Most of the image processing and
+  all of algorithm is implemented. The bridge between the languages is done
+  using JNI.
+
+  <a href='https://www.youtube.com/watch?v=xFNd-foQYrs'>Click here for a demo</a>
+  and <a href='https://github.com/fyquah95/messenger-solitaire-bot'>Click here for the source code</a>
+</p>"
+%}
+
+
+{% include portfolio/project.html
       image_url="/images/portfolio/janestreet-logo.png"
       name="<a href='https://www.google.com/about'>Jane Street Capital</a> - Software Developer Intern"
       when="April 2017 - September 2017"
