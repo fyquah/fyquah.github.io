@@ -1,5 +1,5 @@
 ---
-title: Final Year Project 2018: Inlining ML with ML
+title: Final Year Project 2018 - Inlining ML with ML
 layout: static
 ---
 
