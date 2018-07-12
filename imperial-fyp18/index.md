@@ -27,10 +27,10 @@ benchmarks. A rough summary of this pipeline is:
 While labelling was a key contribution, it was not explicitly used in a
 specific stage. It fits in the bigger picture of being the "framework" that
 powers the entire pipeline. An illustrative summary of the "optimisation
-pipeline" is available in [summary.pdf](here)
+pipeline" is available in [summary.pdf](here).
 
 
-## Writings
+# Writings
 
 I have wrote quite a bit for this project.
 
