@@ -37,9 +37,12 @@ I have wrote quite a bit for this project.
 - [Layman summary to my project](layman) - Anyone who has programmed before
   should be able to understand this. This is mainly targetted at prospective
   computer-science students who might be interested in the kinds of projects
-  that exist.
+  that exist. (I was inspired by a good friend of mine to write this)
 - [Stable Labelling AST Journal Article (DRAFT)](labelling.pdf) -
-  A draft article presenting an algorithm to label nodes in ASTs or
+  A draft article (that I will probably publish at some point ...)
+  presenting an algorithm to label nodes in ASTs or
   tree-based IRs.
+- [Report](report.pdf) - My report on all the findings of my final year
+  project.
 - [Presentation slides](presentation.pdf) - Presentation slides I have used
   during my project presentation
