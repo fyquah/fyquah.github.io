@@ -11,10 +11,10 @@ layout: base
             <p><em>A simple blog, with (almost) nothing but contents</em></p>
             <p style="font-size: 12px">
                 I am an aspiring computer-scientist and engineer. I like to write, sometimes
-                about both technical contents and casual philosophy. You can read more about me
-                <a href="/about-me/">here</a>. You can also check out my blog posts below or
-                <a href="/cv.pdf">CV</a>. If you wish to contact me, please drop me an email
-                at fuyong [at] fyquah [dot] me .
+                about both technical contents, casual philosophy and my (simple?) life. You
+                can read more about me <a href="/about-me/">here</a>. You can also check out
+                my blog posts below or <a href="/cv.pdf">CV</a>. If you wish to contact me,
+                please drop me an email at fuyong [at] fyquah [dot] me .
             </p>
         </div>
 
@@ -28,7 +28,7 @@ layout: base
                 <th>Title</th>
                 <th>Date</th>
             </thead>
-            {% for post in site.categories.eng %}
+            {% for post in site.posts %}
               {% unless post.draft %}
                     <tr>
                         <td class="time">
