@@ -3,20 +3,6 @@ layout: portfolio
 title: Portfolio
 ---
 
-# Current
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-2"><img src="/images/portfolio/imperial-logo.jpg" /></div>
-        <div class="col-sm-4">
-            <h3><a href="https://www.imperial.ac.uk/">Imperial College London</a></h3>
-            <p>October 2014 - Present</p>
-            <p><em>MEng Electronic and Information Engineering</em></p>
-        </div>
-    </div>
-</div>
-
-
 # Projects
 
 <div class="container">
