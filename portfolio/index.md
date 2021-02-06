@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Portfolio
+title: Projects, Portfolio
 ---
 
 # Projects
@@ -41,23 +41,6 @@ title: Portfolio
 
 
 {% include portfolio/project.html
-      image_url="/images/portfolio/janestreet-logo.png"
-      name="<a href='https://www.janestreet.com'>Jane Street Capital</a> - Software Developer Intern"
-      when="April 2017 - September 2017"
-      description="
-<p>
-  I was a software engineer intern in London, United Kingdom.
-</p>
-<p>
-  I worked on distributed systems, compilers and task parallelisation at
-  Jane Street. I written primarily OCaml during my time here and have become
-  adapted in functional programming and type systems. Some of my work
-  included performance patches to the OCaml compiler's optimizing pass,
-  Flambda.
-</p>"
-%}
-
-{% include portfolio/project.html
       image_url="/images/portfolio/basketball.png"
       name="Basketball FRVR Bot"
       when="April 2017"
@@ -90,29 +73,6 @@ title: Portfolio
 </p>
 "
 %}
-
-{% include portfolio/project.html
-      image_url="/images/portfolio/google-logo.png"
-      name="<a href='https://www.google.com/about'>Google</a> - Software Engineering Intern"
-      when="June 2016 - September 2016"
-      description="
-      <p>
-      I was a software engineer intern in Google, Mountain View CA, United States.
-      </p>
-      <p>
-I Worked on <a target='_blank' href='https://www.github.com/google/pytype'>pytype</a>,
-a python type inference and static analysis tool. My main contribution was integrating
-pytype with an internal code review tool to facilitate the company's transition to
-typed python.
-</p>
-<p>
-My work helped discovered bugs in several projects and was adapted by several
-teams, including the python team and
-<a target='_blank' href='https://research.google.com/pubs/pub43438.html'>borg</a> ,
-google's cluster manager.
-</p>"
-%}
-
 
 {% include portfolio/project.html
       image_url="/images/portfolio/c-compiler.png"
@@ -167,20 +127,6 @@ google's cluster manager.
 "
 %}
 
-
-{% include portfolio/project.html
-      image_url="/images/portfolio/netcraft-logo.png"
-      name="<a href='https://www.netcraft.com/'>Netcraft</a> - Internet Services Developer Intern"
-      when="June - August 2015"
-      description="
-<p>
-    I worked on a hosting company classification project. My tasks mainly comprises of
-    writing tools to partially automate data classification and designing and implementing
-    features to aid manual data classification. I wrote Perl, bash and PHP
-    extensively in this internship.
-</p>
-"
-%}
 
 {% include portfolio/project.html
       image_url="/images/portfolio/fishotron.png"
