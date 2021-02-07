@@ -10,5 +10,6 @@ layout: static
 # Trading and Finance
 
 - [Index Funds could subvert Price Discovery?](https://meanderful.blogspot.com/2013/01/dark-pools-good-or-evil.html)
+- [2021 February 07 - US markets are expensive?](https://twitter.com/ajc_79/status/1293295239575339008)
 
 
