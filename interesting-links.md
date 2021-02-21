@@ -13,4 +13,7 @@ layout: static
 - [2021 February 07 - US markets are expensive?](https://twitter.com/ajc_79/status/1293295239575339008)
 - [Index Funds could subvert Price Discovery?](https://meanderful.blogspot.com/2013/01/dark-pools-good-or-evil.html)
 
+# Cryptocurrency
+
+- [Ethereum Classic got 51% attacked by rented hash power (2020 September)](https://forkast.news/hash-power-51-attack-rent-huge-vulnerability-proof-of-work-blockchain/)
 
