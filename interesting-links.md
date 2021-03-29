@@ -7,6 +7,7 @@ layout: static
 
 - [RTDSC and REF\_TSC inconsistency](https://stackoverflow.com/questions/45472147/lost-cycles-on-intel-an-inconsistency-between-rdtsc-and-cpu-clk-unhalted-ref-ts)
 - [anandtech article on how sdram works](https://www.anandtech.com/print/3851/everything-you-always-wanted-to-know-about-sdram-memory-but-were-afraid-to-ask)
+- [Hitting the Memory Wall (1995)](https://www.researchgate.net/publication/2429866_Hitting_the_Memory_Wall_Implications_of_the_Obvious)
 
 # Trading and Finance
 
