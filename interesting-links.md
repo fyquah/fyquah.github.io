@@ -11,11 +11,12 @@ layout: static
 
 # Trading and Finance
 
+- [Understanding the Central Bank Balance Sheet](https://www.bankofengland.co.uk/-/media/boe/files/ccbs/resources/understanding-the-central-bank-balance-sheet.pdf?la=en&hash=0475942A8BE465179CF4CFB4996AF44CDACB1662)
 - [Freedom to Choose Video Series, ft. Milton Friedman](https://www.youtube.com/watch?v=D3N2sNnGwa4)
 - [2021 February 07 - US markets are expensive?](https://twitter.com/ajc_79/status/1293295239575339008)
 - [Index Funds could subvert Price Discovery?](https://meanderful.blogspot.com/2013/01/dark-pools-good-or-evil.html)
 
 # Cryptocurrency
 
-- [Ethereum Classic got 51% attacked by rented hash power (2020 September)](https://forkast.news/hash-power-51-attack-rent-huge-vulnerability-proof-of-work-blockchain/)
+- [2020 September - Ethereum Classic got 51% attacked by rented hash power](https://forkast.news/hash-power-51-attack-rent-huge-vulnerability-proof-of-work-blockchain/)
 
