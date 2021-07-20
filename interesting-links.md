@@ -25,6 +25,7 @@ Resource allocation, currencies, QEs, crypto currency etc.
 - [Understanding the Central Bank Balance Sheet](https://www.bankofengland.co.uk/-/media/boe/files/ccbs/resources/understanding-the-central-bank-balance-sheet.pdf?la=en&hash=0475942A8BE465179CF4CFB4996AF44CDACB1662)
 - [Freedom to Choose Video Series, ft. Milton Friedman](https://www.youtube.com/watch?v=D3N2sNnGwa4)
 - [2020 September - Ethereum Classic got 51% attacked by rented hash power](https://forkast.news/hash-power-51-attack-rent-huge-vulnerability-proof-of-work-blockchain/)
+- [1972 - Project Cybersyn in Chile](https://99percentinvisible.org/episode/project-cybersyn/)
 
 # Trading
 
