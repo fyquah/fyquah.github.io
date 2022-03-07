@@ -12,6 +12,10 @@ interesting enough that i'd paste links here. They
 - Macroeconomics + Resource Allocation
 - Trading
 
+# FPGA and Digital Design
+
+- [VHDL's Crown Jewel - Simulation Semantics vs Verilog](https://insights.sigasi.com/opinion/jan/vhdls-crown-jewel/)
+
 # Computer Architecture
 
 - [RTDSC and REF\_TSC inconsistency](https://stackoverflow.com/questions/45472147/lost-cycles-on-intel-an-inconsistency-between-rdtsc-and-cpu-clk-unhalted-ref-ts)
