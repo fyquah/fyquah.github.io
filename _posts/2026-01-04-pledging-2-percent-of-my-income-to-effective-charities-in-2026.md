@@ -11,16 +11,17 @@ This will be the first time I have done any kind of effective giving.
 
 # Selfish Reasons to Give
 
-There are a lot of reasons to do this for the good of the world, but I will give
-the selfish altruism angle. The thing that really swayed me towards taking this
-seriously is reading the possible impact of **effective** donation. It made me
-feel warm and good. For example, GiveWell estimates that it costs [around
-$3,500 - $5,500 in 2022-2024 to save a
+There are a lot of reasons to do this for the good of the world, but I will
+give the selfish altruism angle. The thing that really swayed me towards taking
+this seriously is reading the possible impact of **effective** donation. Almost
+as important as knowing how much better it made the world, was that it made me
+feel warm and good having made the donation. For example, GiveWell estimates
+that it costs [around $3,500 - $5,500 in 2022-2024 to save a
 life](https://www.givewell.org/impact-estimates#Impact_metrics_for_grants_to_GiveWells_top_charities).
 
-Ultimately, doing good feels good, and it's probably easier to sustain being an
-altruist if it's an act I enjoy. I have gotten Gemini to explain [why impure
-effective altruism is good, in fact a sustainable form of
+Doing impactful good feels good, and it's probably easier to sustain being an
+altruist if it's an act I enjoy.  I have gotten Gemini to explain [why impure
+effective altruism is a good, and in fact sustainable, form of
 giving](https://gemini.google.com/share/712c86cef103).
 
 # The Case for Doing it Publicly
