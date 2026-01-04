@@ -1,55 +1,18 @@
 ---
-layout: base
+layout: default
+title: Home
 ---
+<h1>Posts</h1>
 
-<article class="article">
-    <div class="main">
-        <div>
-            <h2> My's Corner of the Internet </h2>
-        </div>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
 
-        <h3>Projects</h3>
-        {% include projects_list.html %}
-
-        <h3>Posts</h3>
-
-        <table class="index">
-            <thead>
-                <th>Title</th>
-                <th>Date</th>
-            </thead>
-            {% for post in site.posts %}
-              {% unless post.draft %}
-                    <tr>
-                        <td class="time">
-
-                            <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
-                        </td>
-                        <td class='title'>
-                            <a href="{{ post.url }}" rel="prefetch">
-                                {{ post.title }}
-                            </a>
-                        </td>
-                    </tr>
-              {% endunless %}
-            {% endfor %}
-        </table>
-        <section class="pagination" style="text-align:center">
-          {% if paginator.previous_page %}
-            {% if paginator.previous_page == 1 %}
-            <a href="/" class="btn btn-outline">‹ Newer</a>
-            {% else %}
-            <a href="/page{{ paginator.previous_page }}" class="btn btn-outline">‹ Newer</a>
-            {% endif %}
-          {% endif %}
-          {% if paginator.next_page %}
-            <a href="/page{{ paginator.next_page }}" class="btn btn-outline">Older ›</a>
-          {% endif %}
-        </section>
-        <br />
-        <div>
-            <p  style="font-size: 12px">Posts that show up here are somewhat related to engineering, which is the reason I think why most people are here anyways. If you are interested in my non-eng writings, check out my <a href="/diary.html">public diary</a>.</p>
-        </div>
-
-    </div>
-</article>
+{% if site.posts.size == 0 %}
+<p>No posts yet.</p>
+{% endif %}

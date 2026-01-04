@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-gem "rake"
-gem 'github-pages', group: :jekyll_plugins
-gem 'execjs'
-gem "therubyracer"
+
+gem "jekyll", "~> 4.3"
+gem "kramdown-parser-gfm"
