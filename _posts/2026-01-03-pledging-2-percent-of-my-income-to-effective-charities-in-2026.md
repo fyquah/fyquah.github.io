@@ -37,10 +37,10 @@ Reasons to do it privately:
 - virtue signalling
 
 Weighing the pros and cons, I think writing it in a publicly-visible blog post
-personally sounds like the right balance. If someone I know ends up reading
-this and donates even $5,000 to save 1 life, over the course of the lifetime of
-this blog, the cost to personal privacy and potential virtue signalling is
-definitely worthwhile.
+personally sounds like the right balance. If people I know end up cumulatively
+donate even $5,000 to save 1 life, as a result of reading this, over the course
+of the lifetime of this blog, the cost to personal privacy and potential virtue
+signalling is definitely worthwhile.
 
 Giving What We Can
 has written extensively on [why one should do this publicly](https://www.givingwhatwecan.org/why-pledge).
@@ -49,6 +49,6 @@ has written extensively on [why one should do this publicly](https://www.givingw
 
 I am still figuring this out -- all this is new to me, and I intend to write
 more about this once I do. I have started with some immediately beneficial
-health initiatives, especially in the light of [USAID cuts](https://www.cgdev.org/blog/update-lives-lost-usaid-cuts). My best guess is a
+health initiatives, especially in light of [USAID cuts](https://www.cgdev.org/blog/update-lives-lost-usaid-cuts). My best guess is a
 good mix of immediately impactful short-medium term health and long-tail AI safety
-initiatives, but this will very likely change.
+initiatives, but this will very likely change over time as I learn more.
