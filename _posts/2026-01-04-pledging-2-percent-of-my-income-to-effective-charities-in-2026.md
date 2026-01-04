@@ -26,17 +26,21 @@ giving](https://gemini.google.com/share/712c86cef103).
 
 # The Case for Doing it Publicly
 
-The gist of it is commitment and spreading the act of giving as a cultural
-norm. As mentioned above, it's relatively cheap to have high impact, as long as
-the giving is incredibly effective. There are of course some reasons not to -
-privacy and virtue signalling.
+Reasons to do it publicly: 
+
+- commitment to giving
+- spreading the act of giving as a cultural norm.
+
+Reasons to do it privately:
+
+- privacy
+- virtue signalling
 
 Weighing the pros and cons, I think writing it in a publicly-visible blog post
-sounds like the right balance to me personally, even though I generally
-consider myself a relatively private person.  If a peer ends up reading this
-and donates even $5,000 to save 1 life, over the course of the lifetime of this blog,
-the cost to personal privacy and potential virtue signalling is definitely
-worthwhile.
+personally sounds like the right balance. If someone I know ends up reading
+this and donates even $5,000 to save 1 life, over the course of the lifetime of
+this blog, the cost to personal privacy and potential virtue signalling is
+definitely worthwhile.
 
 Giving What We Can
 has written extensively on [why one should do this publicly](https://www.givingwhatwecan.org/why-pledge).
