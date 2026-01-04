@@ -31,19 +31,25 @@ body {
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
-  max-width: 650px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 
 header nav {
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 header nav a {
   font-weight: 600;
   text-decoration: none;
   color: var(--text);
+}
+
+header nav a:hover {
+  color: var(--accent);
 }
 
 main {
