@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a computer programmer, for most part.  You will find that the content here
+I am a computer programmer, for the most part.  You will find that the content here
 is likely going to revolve around:
 
 - Computer programming tidbits (or link to my employer's blog)
