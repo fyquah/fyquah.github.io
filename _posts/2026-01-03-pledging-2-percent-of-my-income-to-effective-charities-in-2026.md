@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pledging 2% of my Income to Effective Charities in 2026"
-date: 2026-01-04
+date: 2026-01-03
 ---
 
 I have taken a pledge to donate at least 2% of my income to effective charities
