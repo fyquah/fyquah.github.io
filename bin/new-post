@@ -1,0 +1,48 @@
+#!/bin/bash
+set -e
+
+POSTS_DIR="$(dirname "$0")/../_posts"
+
+# Get title from argument or prompt
+if [ -n "$1" ]; then
+    TITLE="$*"
+else
+    read -p "Post title: " TITLE
+fi
+
+if [ -z "$TITLE" ]; then
+    echo "Error: Title is required" >&2
+    exit 1
+fi
+
+# Generate slug from title
+SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-')
+
+# Get today's date
+DATE=$(date +%Y-%m-%d)
+
+# Create filename
+FILENAME="${POSTS_DIR}/${DATE}-${SLUG}.md"
+
+# Check if file already exists
+if [ -f "$FILENAME" ]; then
+    echo "Error: Post already exists: $FILENAME" >&2
+    exit 1
+fi
+
+# Create the post
+cat > "$FILENAME" << EOF
+---
+layout: post
+title: "${TITLE}"
+date: ${DATE}
+---
+
+EOF
+
+echo "Created: $FILENAME"
+
+# Open in editor if EDITOR is set
+if [ -n "$EDITOR" ]; then
+    $EDITOR "$FILENAME"
+fi
