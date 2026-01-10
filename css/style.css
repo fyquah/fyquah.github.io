@@ -52,6 +52,11 @@ header nav a:hover {
   color: var(--accent);
 }
 
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
 main {
   min-height: 60vh;
 }

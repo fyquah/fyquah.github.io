@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+# About
+
 My name is Fu Yong Quah. I am a computer programmer, for the most part. You
 will find that the content here is likely going to revolve around:
 
