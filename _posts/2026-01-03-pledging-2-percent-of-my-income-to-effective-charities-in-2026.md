@@ -6,7 +6,6 @@ date: 2026-01-03
 
 I have taken a pledge to donate at least 2% of my income to effective charities
 in 2026, as part of [Giving What We Can's trial pledge](https://www.givingwhatwecan.org/about-us/members#lifetime-members-section).
-
 This will be the first time I have done any kind of effective giving.
 
 # Selfish Reasons to Give
@@ -49,6 +48,4 @@ has written extensively on [why one should do this publicly](https://www.givingw
 
 I am still figuring this out -- all this is new to me, and I intend to write
 more about this once I do. I have started with some immediately beneficial
-health initiatives, especially in light of [USAID cuts](https://www.cgdev.org/blog/update-lives-lost-usaid-cuts). My best guess is a
-good mix of immediately impactful short-medium term health and long-tail AI safety
-initiatives, but this will very likely change over time as I learn more.
+health initiatives, especially in light of [USAID cuts](https://www.cgdev.org/blog/update-lives-lost-usaid-cuts).
