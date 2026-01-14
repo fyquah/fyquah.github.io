@@ -32,8 +32,8 @@ Reasons to do it publicly:
 
 Reasons to do it privately:
 
-- privacy
-- virtue signalling
+- retaining privacy
+- avoiding virtue signalling
 
 Weighing the pros and cons, I think writing it in a publicly-visible blog post
 personally sounds like the right balance. If people I know end up cumulatively
