@@ -27,7 +27,7 @@ giving](https://gemini.google.com/share/712c86cef103).
 
 Reasons to do it publicly: 
 
-- commitment to giving
+- commiting myself to giving
 - spreading the act of giving as a cultural norm.
 
 Reasons to do it privately:
