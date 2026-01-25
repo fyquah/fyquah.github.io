@@ -8,19 +8,21 @@ I have taken a pledge to donate at least 2% of my income to effective charities
 in 2026, as part of [Giving What We Can's trial pledge](https://www.givingwhatwecan.org/about-us/members#lifetime-members-section).
 This will be the first time I have done any kind of effective giving.
 
-# Selfish Reasons to Give
+# Reasons to Give Effectively
 
-There are a lot of reasons to do this for the good of the world, but I will
-give the selfish altruism angle. The thing that really swayed me towards taking
-this seriously is reading the possible impact of **effective** donation. Almost
-as important as knowing how much better it made the world, was that it made me
-feel warm and good having made the donation. For example, GiveWell estimates
-that it costs [around $3,500 - $5,500 in 2022-2024 to save a
-life](https://www.givewell.org/impact-estimates#Impact_metrics_for_grants_to_GiveWells_top_charities).
+_Disclaimer: I have updated this section articulate the thoughts about reason
+more clearly, but nothing changes the core messaging._
 
-Doing impactful good feels good, and it's probably easier to sustain being an
-altruist if it's an act I enjoy.  I have gotten Gemini to explain [why impure
-effective altruism is a good, and in fact sustainable, form of
+What really swayed me towards taking this seriously is reading the possible
+impact of **effective** donation. For example, GiveWell estimates that it costs [around
+$3,500 - $5,500 in 2022-2024 to save a life in
+  2024](https://www.givewell.org/impact-estimates#Impact_metrics_for_grants_to_GiveWells_top_charities).
+That is a really high marginal impact per unit dollar!
+
+Furthermore, from the more selfish angle, doing impactful good feels
+good! There has been plenty of psychology studies
+surrounding the helper's high phenomena. I have gotten Gemini to explain [why impure effective altruism is a
+good, and in fact sustainable, form of
 giving](https://gemini.google.com/share/712c86cef103).
 
 # The Case for Doing it Publicly
