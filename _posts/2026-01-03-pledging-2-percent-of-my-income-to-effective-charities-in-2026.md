@@ -10,8 +10,8 @@ This will be the first time I have done any kind of effective giving.
 
 # Reasons to Give Effectively
 
-_Disclaimer: I have updated this section articulate the thoughts about reason
-more clearly, but nothing changes the core messaging._
+_(I have updated this section articulate the thoughts about reason
+more clearly, but nothing changes the core messaging)_
 
 What really swayed me towards taking this seriously is reading the possible
 impact of **effective** donation. For example, GiveWell estimates that it costs [around
