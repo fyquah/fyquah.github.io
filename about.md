@@ -6,8 +6,9 @@ permalink: /about/
 
 # About
 
-My name is Fu Yong Quah. I am a computer programmer, for the most part. You
-will find that the content here is likely going to revolve around:
+My name is Fu Yong Quah. I am a computer programmer based in London, for the
+most part. You will find that the content here is likely going to revolve
+around:
 
 - Computer programming
 - Public commitments / notes
